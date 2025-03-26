@@ -1,0 +1,1262 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  padding: 0;
+}
+
+/* sizes */
+/* font */
+h1 {
+  font-size: 4.5rem;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+p {
+  font-size: 1.05em;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+a {
+  font-size: 1.2em;
+  cursor: url("img/pointer.png"), pointer;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+
+button {
+  cursor: url("img/pointer.png"), pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #181818;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #579af2;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #579af2;
+  border-radius: 12px;
+}
+
+hr {
+  width: 80px;
+  height: 4px;
+  border-radius: 12px;
+  background-color: #52cbbe;
+  border: none;
+}
+
+::-moz-selection {
+  background-color: #579af2;
+  color: ghostwhite;
+}
+
+::selection {
+  background-color: #579af2;
+  color: ghostwhite;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #1e1f26;
+}
+html body {
+  font-family: "ROBOTO", sans-serif;
+  background-color: #1e1f26;
+  z-index: -1;
+}
+html body nav .logoHeader {
+  width: 30px;
+  height: auto;
+  margin: 0px 0px 50px 5px;
+}
+html body nav .logoHeader svg {
+  width: 100%;
+  height: auto;
+}
+html body nav.menu-lateral {
+  width: 60px;
+  height: 100%;
+  background-color: #181818;
+  padding: 40px 0 40px;
+  box-shadow: 3px 0 0 #285598;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  transition: 0.3s;
+  overflow: hidden;
+}
+html body nav.menu-lateral:hover {
+  width: 300px;
+}
+html body .btn-expandir {
+  width: 100%;
+  padding-left: 10px;
+}
+html body .btn-expandir > i {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+html body ul {
+  height: 100%;
+  list-style-type: none;
+}
+html body ul li.item-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 20px 1%;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
+  margin-left: 15px;
+}
+html body ul li.item-menu {
+  transition: 0.1s;
+}
+html body ul li.item-menu:hover {
+  background: #285598;
+}
+html body ul li.item-menu a .txt-link {
+  margin-left: 30px;
+}
+html body ul li.item-menu a .icon > i {
+  font-size: 27px;
+}
+html body main #home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  background-color: #1e1f26;
+  text-align: center;
+}
+html body main #home .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+html body main #home .background canvas {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  filter: blur(5px);
+}
+html body main #home .home-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main #home h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 5vw;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.5rem;
+  color: white;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+html body main #home h1 span {
+  color: #579af2;
+  margin-left: -6%;
+}
+html body main #home h1:hover {
+  transform: translate3d(0, -10px, 22px);
+  color: #57c6f2;
+  text-shadow: 20px 0 70px #579af2;
+}
+html body main #home h3 {
+  font-size: 2vw;
+  letter-spacing: 0.7em;
+  font-family: "ROBOTO", sans-serif;
+  font-weight: 300;
+  color: #faebd7;
+  z-index: 4;
+}
+html body main #home h3 .m {
+  color: #faebd7;
+  text-shadow: 0 0 0 #faebd7;
+  animation: loading 1.5s ease-in-out infinite alternate;
+}
+@keyframes loading {
+  to {
+    text-shadow: 20px 0 70px #579af2;
+    color: #579af2;
+  }
+}
+html body main #home .loader span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+html body main #home .loader span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+html body main #home .loader span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+html body main #home .loader span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+html body main #home .loader span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+html body main #home .loader span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+html body main #home .loader span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+html body main #home .loader span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+html body main #home .loader span:nth-child(10) {
+  animation-delay: 0.9s;
+}
+html body main #home .loader span:nth-child(11) {
+  animation-delay: 1s;
+}
+html body main #home .loader span:nth-child(12) {
+  animation-delay: 1.1s;
+}
+html body main #home .loader span:nth-child(13) {
+  animation-delay: 1.2s;
+}
+html body main #home .loader span:nth-child(14) {
+  animation-delay: 1.3s;
+}
+html body main #home .loader span:nth-child(15) {
+  animation-delay: 1.4s;
+}
+html body main #home .loader span:nth-child(16) {
+  animation-delay: 1.5s;
+}
+html body main #home .loader span:nth-child(17) {
+  animation-delay: 1.6s;
+}
+html body main #home .loader span:nth-child(18) {
+  animation-delay: 1.7s;
+}
+html body main #home .loader span:nth-child(19) {
+  animation-delay: 1.8s;
+}
+html body main #home .loader span:nth-child(20) {
+  animation-delay: 1.9s;
+}
+html body main #home .loader span:nth-child(21) {
+  animation-delay: 2s;
+}
+html body main #home .loader span:nth-child(22) {
+  animation-delay: 2.1s;
+}
+html body main #carouselCont {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100vw !important;
+  overflow: hidden;
+  position: relative;
+}
+html body main #carouselCont .parceiros {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main #carouselCont .parceiros h2 {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0% 0% 5% 0%;
+}
+html body main #carouselCont .parceiros h2 span {
+  color: #579af2;
+}
+html body main #carouselCont .parceiros .carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+html body main #carouselCont .parceiros .gradiente {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: radial-gradient(circle, rgba(30, 31, 38, 0) 30%, rgba(30, 31, 38, 0.9) 70%, rgb(30, 31, 38) 100%);
+  top: 1117px;
+  left: 0px;
+  z-index: 99999;
+}
+html body main #carouselCont .tecnologias {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main #carouselCont .tecnologias h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin: 1% 0% 2% 0%;
+}
+html body main #carouselCont .tecnologias .carouselTec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100%;
+  gap: 50px;
+}
+html body main #carouselCont .tecnologias .carouselTec div {
+  width: 320px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 1%;
+  border-radius: 20px;
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  padding: 0.5%;
+}
+html body main #carouselCont .tecnologias .carouselTec div h4 {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1.05em;
+  margin-bottom: 2%;
+}
+html body main #carouselCont .tecnologias .carouselTec div img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 2%;
+}
+html body main #carouselCont .tecnologias .carouselTec div p {
+  color: white;
+}
+html body main #sobre {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+html body main #sobre .sobreCont {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+html body main #sobre .sobreCont .title h3 {
+  margin-bottom: 2%;
+}
+html body main #sobre .sobreCont .title h3 span {
+  margin-left: -1%;
+  color: #e79740;
+}
+html body main #sobre .sobreCont .title h2 {
+  margin-bottom: 2%;
+}
+html body main #sobre .sobreCont .title .titleCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start !important;
+  gap: 10%;
+}
+html body main #sobre .sobreCont .title .titleCont .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  gap: 10%;
+}
+html body main #sobre .sobreCont .title .titleCont .icons img {
+  width: 50px;
+  height: auto;
+}
+html body main #sobre .sobreCont .title .titleCont .iconOne img {
+  padding: 10%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border: 1px solid #e79740;
+}
+html body main #sobre .sobreCont .title .titleCont .iconTwo img {
+  padding: 10%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border: 1px solid #e30278;
+}
+html body main #sobre .sobreCont .title .titleCont .iconThree img {
+  padding: 10%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border: 1px solid #7e4bd0;
+}
+html body main #sobre .sobreCont .sobreItens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main #sobre .sobreCont .sobreItens .light {
+  position: absolute;
+}
+html body main #sobre .sobreCont .sobreItens .light img {
+  width: 1057px;
+  height: 1500px;
+}
+html body main #sobre .sobreCont .sobreItens .backgroundSobre {
+  position: absolute;
+}
+html body main #sobre .sobreCont .sobreItens .sobreTitle {
+  z-index: 999;
+  width: 420px;
+  height: 450px;
+  background: rgba(37, 34, 34, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  /* exemplo de valor válido */
+  backdrop-filter: blur(5px);
+  /* para compatibilidade com browsers não WebKit */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5%;
+  padding: 10%;
+}
+html body main #sobre .sobreCont .sobreItens .sobreTitle h4 {
+  margin-bottom: 5%;
+}
+html body main #sobre .sobreCont .sobreItens .sobreTitle h4 span {
+  color: #e79740;
+}
+html body main #sobre .sobreCont .sobreItens .sobreTitle p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 350px;
+}
+html body main #sobre .visao .title h3 span {
+  color: #e30278 !important;
+}
+html body main #sobre .visao .sobreItens .sobreTitle h4 span {
+  color: #e30278 !important;
+}
+html body main #sobre .valores .title h3 span {
+  color: #7e4bd0 !important;
+}
+html body main #sobre .valores .sobreItens .sobreTitle h4 span {
+  color: #7e4bd0 !important;
+}
+html body main #nossoParceiro {
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main #nossoParceiro .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main #nossoParceiro .title span {
+  color: #579af2;
+}
+html body main #nossoParceiro .title p {
+  width: 480px;
+  text-align: center;
+}
+html body main #nossoParceiro .parceiroCont {
+  background-image: url(../img/background_seja_nosso_parceiro.png);
+  width: 70%;
+  padding-bottom: 4%;
+  background-size: 102% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  gap: 10%;
+}
+html body main #nossoParceiro .parceiroCont .icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2%;
+}
+html body main #nossoParceiro .parceiroCont .icone img {
+  margin-bottom: 6%;
+}
+html body main #nossoParceiro .parceiroCont .icone h4 {
+  margin-bottom: 3%;
+}
+html body main #nossoParceiro .parceiroCont .icone p {
+  width: 290px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+html body main #nossoParceiro .parceiroCont :first-child {
+  margin-left: 2%;
+}
+html body main #servicos {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6%;
+}
+html body main #servicos .servicoOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main #servicos .servicoOne .servicoCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start !important;
+  flex-direction: column;
+}
+html body main #servicos .servicoOne .servicoCont h4 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+html body main #servicos .servicoOne .servicoCont h4 span {
+  color: #579af2;
+}
+html body main #servicos .servicoOne .servicoCont h3 {
+  width: 560px;
+  font-size: 2.7em;
+  margin-bottom: 2%;
+}
+html body main #servicos .servicoOne .servicoCont p {
+  color: rgba(255, 255, 255, 0.6);
+  width: 550px;
+  font-size: 1em;
+}
+html body main #servicos .servicoOne .servicoCont .titleItens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start !important;
+}
+html body main #servicos .servicoOne .servicoCont .titleItens h4 {
+  margin: 0px !important;
+  width: 400px;
+}
+html body main #servicos .servicoOne .servicoCont .titleItens img {
+  width: 30px;
+  height: auto;
+  margin-right: 5%;
+}
+html body main #servicos .servicoOne .servicoCont .mobile img {
+  width: auto;
+  height: 30px;
+  margin: 0% 6% 0% 1.5%;
+}
+html body main #servicos .servicoOne .servicoCont hr {
+  width: 90%;
+  height: 0.5px;
+  background: white;
+  opacity: 0.15;
+}
+html body main #servicos .servicoOne .servicoItens {
+  display: flex;
+  position: static;
+  background-size: 640px;
+  min-width: none;
+  background-repeat: no-repeat;
+  height: 700px;
+  background-image: url(../img/background_servicos.png);
+}
+html body main #servicos .servicoOne .servicoItens .servicoTitles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+html body main #servicos .servicoOne .servicoItens .servicoTitles h4 {
+  font-weight: bold;
+  font-size: 1, 2em;
+}
+html body main #servicos .servicoOne .servicoItens .servicoTitles p {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2%;
+}
+html body main #servicos .servicoOne .servicoItens .servicoTitles img {
+  width: 20px;
+  height: auto;
+}
+html body main #servicos .servicoOne .servicoItens .manutencao {
+  left: 100px;
+  top: -40px;
+}
+html body main #servicos .servicoOne .servicoItens .seo {
+  left: 190px;
+  top: 60px;
+}
+html body main #servicos .servicoOne .servicoItens .icons {
+  position: relative;
+}
+html body main #servicos .servicoOne .servicoItens .icons img {
+  width: 60px;
+  height: auto;
+}
+html body main #servicos .servicoOne .servicoItens .manutencaoIcon {
+  left: 135px;
+  top: 185px;
+}
+html body main #servicos .servicoOne .servicoItens .marketingIcon {
+  left: -65px;
+  top: 490px;
+}
+html body main #servicos .servicoTwo {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main #servicos .servicoTwo .servicoTwoCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main #servicos .servicoTwo .servicoTwoCont .servicoTwoContItens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+html body main #servicos .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  margin-bottom: 3%;
+  padding: 3% 7% 3% 7%;
+}
+html body main #servicos .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens img {
+  width: 60px;
+  height: auto;
+  margin-right: 5%;
+}
+html body main #servicos .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens h4 {
+  font-weight: bold;
+}
+html body main #servicos .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens p {
+  width: 400px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+}
+html body main #servicos .servicoTwo .servicoTwoItens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  margin-bottom: 10%;
+  padding: 3% 7% 3% 7%;
+}
+html body main #servicos .servicoTwo .servicoTwoItens img {
+  width: 60px;
+  height: auto;
+  margin-right: 5%;
+}
+html body main #servicos .servicoTwo .servicoTwoItens h4 {
+  font-weight: bold;
+}
+html body main #servicos .servicoTwo .servicoTwoItens p {
+  width: 400px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+}
+html body main #portifolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+html body main #portifolio .port-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  z-index: 9999;
+}
+html body main #portifolio .port-card h2 {
+  color: white;
+  font-size: 4.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+html body main #portifolio .port-card h2 span {
+  color: #579af2;
+}
+html body main #portifolio .port-card h4 {
+  color: white;
+  margin-top: 2%;
+  text-align: center;
+  width: 650px;
+  font-size: 1.5rem;
+}
+html body main #portifolio .card-port {
+  display: flex;
+  margin-top: 2%;
+  width: 80%;
+  height: 400px;
+  border-radius: 10%;
+  z-index: 2222;
+  justify-content: center;
+  gap: 3.5%;
+  /* Espaçamento entre os cards */
+}
+html body main #portifolio .card-port .card {
+  width: 30%;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  background-image: url(../img/rrgarage.png);
+  background-size: cover;
+  flex-direction: column;
+  /* Alinha os elementos na vertical */
+  align-items: center;
+  justify-content: center;
+  /* Faz a imagem ocupar toda a largura */
+  /* Garante que a imagem vá até o topo */
+  background-color: #f0f0f0;
+  /* Apenas para referência visual */
+  overflow: hidden;
+  /* Evita qualquer transbordamento */
+  cursor: pointer;
+  transition: background-position 3s ease-in-out;
+}
+html body main #portifolio .card-port .card img {
+  width: 100%;
+  height: 100%;
+  /* Agora a imagem ocupa toda a altura do card */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Garante que a imagem cubra todo o espaço */
+  border-radius: 20px 20px 0 0;
+  /* Arredondamento apenas no topo */
+}
+html body main #portifolio .card-port .card button {
+  width: 280px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(80, 80, 80, 0.7);
+  border-radius: 25px;
+  border: none;
+  margin-top: auto;
+  /* Empurra o botão para o final do card */
+  margin-bottom: 20px;
+  /* Pequeno espaço entre o botão e o final */
+}
+html body main #portifolio .card-port .card button h3 {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0px;
+}
+html body main #portifolio .card-port .card:hover {
+  background-position: 0% 100%;
+}
+html body main #portifolio .button {
+  /* From Uiverse.io by alexmaracinaru */
+}
+html body main #portifolio .button .cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main #portifolio .button .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #579af2;
+  width: 55px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+html body main #portifolio .button .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+html body main #portifolio .button .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #ffffff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+html body main #portifolio .button .cta:hover:before {
+  width: 100%;
+  background: #579af2;
+}
+html body main #portifolio .button .cta:hover svg {
+  transform: translateX(0);
+}
+html body main #portifolio .button .cta:active {
+  transform: scale(0.95);
+}
+html body main #solucoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+html body main #solucoes .solucoesCont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start !important;
+  background: rgba(46, 46, 46, 0.6);
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.7);
+  padding: 4%;
+  border-radius: 25px;
+}
+html body main #solucoes .solucoesCont div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start !important;
+  flex-direction: column;
+}
+html body main #solucoes .solucoesCont div h2 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+html body main #solucoes .solucoesCont div p {
+  color: rgba(255, 255, 255, 0.6);
+  width: 700px;
+}
+html body main #solucoes .solucoesCont div {
+  margin-left: 6%;
+  /* From Uiverse.io by alexmaracinaru */
+}
+html body main #solucoes .solucoesCont div .cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 50px;
+}
+html body main #solucoes .solucoesCont div .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #579af2;
+  width: 55px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+html body main #solucoes .solucoesCont div .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+html body main #solucoes .solucoesCont div .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #ffffff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+html body main #solucoes .solucoesCont div .cta:hover:before {
+  width: 100%;
+  background: #579af2;
+}
+html body main #solucoes .solucoesCont div .cta:hover svg {
+  transform: translateX(0);
+}
+html body main #solucoes .solucoesCont div .cta:active {
+  transform: scale(0.95);
+}
+html body main #contato {
+  width: 100%;
+  height: 500px;
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* From Uiverse.io by alexmaracinaru */
+}
+html body main #contato h2 {
+  font-size: 4.5rem;
+}
+html body main #contato h2 span {
+  color: #579af2;
+}
+html body main #contato h3 {
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+html body main #contato p {
+  color: hsla(255, 100%, 100%, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main #contato .pergunta {
+  width: 50%;
+  background: transparent;
+  margin-top: 1%;
+  /* Deixa o fundo do acordeão transparente */
+  /* Muda a cor do texto ao passar o mouse */
+  /* Linha azul separando cada pergunta */
+  /* Estiliza o corpo do acordeão */
+  /* Remove a borda padrão do botão */
+  /* Deixa a seta branca */
+}
+html body main #contato .pergunta .accordion-button {
+  background-color: transparent !important;
+  border: none;
+  color: #fff;
+  /* Mantém o texto visível */
+  font-size: 0.3em;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+html body main #contato .pergunta .accordion-collapse {
+  transition: height 0.5s;
+}
+html body main #contato .pergunta .accordion-button:hover {
+  color: #579af2;
+}
+html body main #contato .pergunta .accordion-item {
+  border: none;
+  background-color: transparent !important;
+}
+html body main #contato .pergunta .accordion-body {
+  background-color: rgba(0, 0, 0, 0);
+  /* Fundo semi-transparente */
+  color: #fff;
+}
+html body main #contato .pergunta .accordion-button:focus {
+  box-shadow: none;
+}
+html body main #contato .pergunta .accordion-button::after {
+  background-image: url(../img/plus_icon.png);
+  /* Inverte a cor padrão da seta (de preto para branco) */
+}
+html body main #contato .cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main #contato .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #579af2;
+  width: 55px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+html body main #contato .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+html body main #contato .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #ffffff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+html body main #contato .cta:hover:before {
+  width: 100%;
+  background: #579af2;
+}
+html body main #contato .cta:hover svg {
+  transform: translateX(0);
+}
+html body main #contato .cta:active {
+  transform: scale(0.95);
+}
+html body main footer {
+  margin-top: 12% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main footer .infoFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main footer .infoFooter .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main footer .infoFooter .menu h3 {
+  margin-bottom: 15%;
+  font-weight: bold;
+  font-style: italic;
+}
+html body main footer .infoFooter .menu ul {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+html body main footer .infoFooter .menu ul li {
+  transition: 0.3s;
+}
+html body main footer .infoFooter .menu ul li a {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+html body main footer .infoFooter .menu ul li a:hover {
+  color: #579af2;
+}
+html body main footer .infoFooter .menu ul li:hover {
+  transform: scale(1.07);
+}
+html body main footer .infoFooter .logo {
+  margin: 0% 25% 0% 45%;
+}
+html body main footer .infoFooter .logo img {
+  width: 400px;
+  height: auto;
+}
+html body main footer .infoFooter .contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main footer .infoFooter .contato h3 {
+  margin-bottom: 6%;
+  font-weight: bold;
+  font-style: italic;
+}
+html body main footer .infoFooter .contato h4 {
+  font-weight: bold;
+  font-style: italic;
+  width: 316px;
+  margin-bottom: 6%;
+}
+html body main footer .infoFooter .contato .redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: normal !important;
+  gap: 20%;
+  margin-bottom: 6%;
+}
+html body main footer .infoFooter .contato .redes img {
+  transition: 0.3s;
+}
+html body main footer .infoFooter .contato .redes img:hover {
+  transform: scale(1.1);
+}
+html body main footer .infoFooter .contato .email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -11%;
+}
+html body main footer .infoFooter .contato .email a {
+  text-decoration: none;
+}
+html body main footer .infoFooter .contato .email a img {
+  transition: 0.3;
+}
+html body main footer .infoFooter .contato .email a img:hover {
+  transform: scale(1.1);
+}
+html body main footer .infoFooter .contato .email a h4 {
+  margin: 0% 0% 0% 4% !important;
+}
+html body main footer hr {
+  width: 85%;
+  height: 0.5px;
+  background: white;
+  opacity: 1 !important;
+}
+html body main footer .info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0% !important;
+  gap: 10%;
+}
+html body main footer .info ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main footer .info ul li {
+  overflow: hidden;
+  transition: 0.3s;
+}
+html body main footer .info ul li a {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5rem;
+  width: 100%;
+  padding-right: 35px;
+  text-decoration: none;
+  color: white !important;
+}
+html body main footer .info ul li a span {
+  color: #579af2;
+}
+html body main footer .info ul li:hover {
+  transform: scale(1.03);
+}
+html body main footer .info ul .copy {
+  margin-right: 35%;
+}/*# sourceMappingURL=style.css.map */
