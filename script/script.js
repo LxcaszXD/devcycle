@@ -73,8 +73,7 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: "#carouselCont",
       // markers: true,
-      start: "top: 50px",
-      end: "top: -300px",
+      start: "+=0",      
       scrub: 2,
     },
   }
@@ -91,8 +90,7 @@ gsap.fromTo(
     scrollTrigger: {
       // markers: true,
       trigger: "#carouselCont",
-      start: "top: 50px",
-      end: "top: -300px",
+      start: "+=0",      
       scrub: 2,
       pin: true,
     },
@@ -103,17 +101,18 @@ gsap.fromTo(
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(
-  "#servicos",
-  { x: "0%" },
+  ".servicosContainer",
+  { x: "50%" },
   {
-    x: "-100%",
+    x: "-83%",
     ease: "none",
     scrollTrigger: {
-      markers: true,
+      // markers: true,
       trigger: "#servicos",
-      start: "top: 50px",
-      end: "top: -300px",
-      scrub: 1  ,
+      start: "+=0",
+      end: "+=600",    
+      scrub: 2,
+      pin: true,
     },
   }
 );
