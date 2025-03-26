@@ -74,7 +74,6 @@ hr {
   width: 80px;
   height: 4px;
   border-radius: 12px;
-  background-color: #52cbbe;
   border: none;
 }
 
@@ -1080,7 +1079,6 @@ html body main #contato h3 {
   margin-bottom: 1%;
 }
 html body main #contato p {
-  color: hsla(255, 100%, 100%, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1182,149 +1180,82 @@ html body main #contato .cta:hover svg {
 html body main #contato .cta:active {
   transform: scale(0.95);
 }
-html body main footer {
-  margin-top: 12% !important;
+html body main .footer {
+  margin-top: 250px;
+  padding: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 50px;
+  flex-direction: column;
+  width: 100%;
+}
+html body main .footer .footer-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+html body main .footer .footer-container .footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+html body main .footer .footer-container .footer-logo h3 {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+html body main .footer .footer-container .footer-logo img {
+  width: 250px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+html body main .footer .footer-container .footer-links {
+  display: flex;
+  gap: 50px;
+}
+html body main .footer .footer-container .footer-links .footer-section {
+  display: flex;
   flex-direction: column;
 }
-html body main footer .infoFooter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+html body main .footer .footer-container .footer-links .footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
 }
-html body main footer .infoFooter .menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-html body main footer .infoFooter .menu h3 {
-  margin-bottom: 15%;
-  font-weight: bold;
-  font-style: italic;
-}
-html body main footer .infoFooter .menu ul {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
-}
-html body main footer .infoFooter .menu ul li {
-  transition: 0.3s;
-}
-html body main footer .infoFooter .menu ul li a {
-  color: white;
-  font-size: 1.5rem;
-  font-family: "DM Sans", sans-serif;
+html body main .footer .footer-container .footer-links .footer-section a {
+  color: #bbbbbb;
   text-decoration: none;
-  font-weight: bold;
-  font-style: italic;
+  margin-bottom: 5px;
+  font-size: 18px;
 }
-html body main footer .infoFooter .menu ul li a:hover {
+html body main .footer .footer-container .footer-links .footer-section a:hover {
   color: #579af2;
 }
-html body main footer .infoFooter .menu ul li:hover {
-  transform: scale(1.07);
+html body main .footer .footer-container .footer-pai {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
 }
-html body main footer .infoFooter .logo {
-  margin: 0% 25% 0% 45%;
+html body main .footer .footer-container .footer-pai .redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  width: 10%;
 }
-html body main footer .infoFooter .logo img {
-  width: 400px;
+html body main .footer .footer-container .footer-pai .redes img {
+  width: 30px;
   height: auto;
+  margin: 10px;
+  margin-bottom: 20px;
 }
-html body main footer .infoFooter .contato {
+html body main .footer .footer-final {
+  width: 90%;
+  border-top: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-}
-html body main footer .infoFooter .contato h3 {
-  margin-bottom: 6%;
-  font-weight: bold;
-  font-style: italic;
-}
-html body main footer .infoFooter .contato h4 {
-  font-weight: bold;
-  font-style: italic;
-  width: 316px;
-  margin-bottom: 6%;
-}
-html body main footer .infoFooter .contato .redes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: normal !important;
-  gap: 20%;
-  margin-bottom: 6%;
-}
-html body main footer .infoFooter .contato .redes img {
-  transition: 0.3s;
-}
-html body main footer .infoFooter .contato .redes img:hover {
-  transform: scale(1.1);
-}
-html body main footer .infoFooter .contato .email {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: -11%;
-}
-html body main footer .infoFooter .contato .email a {
-  text-decoration: none;
-}
-html body main footer .infoFooter .contato .email a img {
-  transition: 0.3;
-}
-html body main footer .infoFooter .contato .email a img:hover {
-  transform: scale(1.1);
-}
-html body main footer .infoFooter .contato .email a h4 {
-  margin: 0% 0% 0% 4% !important;
-}
-html body main footer hr {
-  width: 85%;
-  height: 0.5px;
-  background: white;
-  opacity: 1 !important;
-}
-html body main footer .info {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0% !important;
-  gap: 10%;
-}
-html body main footer .info ul {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-html body main footer .info ul li {
-  overflow: hidden;
-  transition: 0.3s;
-}
-html body main footer .info ul li a {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 1.5rem;
-  width: 100%;
-  padding-right: 35px;
-  text-decoration: none;
-  color: white !important;
-}
-html body main footer .info ul li a span {
-  color: #579af2;
-}
-html body main footer .info ul li:hover {
-  transform: scale(1.03);
-}
-html body main footer .info ul .copy {
-  margin-right: 35%;
+  justify-content: space-evenly;
 }/*# sourceMappingURL=style.css.map */

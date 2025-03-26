@@ -123,7 +123,6 @@ hr {
   width: 80px;
   height: 4px;
   border-radius: 12px;
-  background-color: $colorSecondary;
   border: none;
 }
 
@@ -1263,7 +1262,7 @@ html {
         }
 
         p {
-          color: hsl(255, 255, 255, 0.6);
+         
           @include flex-center();
         }
 
@@ -1382,162 +1381,95 @@ html {
       //#endregion
 
       //#region footer
-      footer {
-        margin-top: 12% !important;
+      .footer {
+        margin-top: 250px;
+        padding: 40px;
         @include flex-center();
+        gap: 50px;
         flex-direction: column;
+        width: 100%;
 
-        .infoFooter {
-          @include flex-center();
-
-          .menu {
-            @include flex-center();
-            flex-direction: column;
-
-            h3 {
-              margin-bottom: 15%;
-              @include style-font();
-            }
-
-            ul {
-              text-align: center;
-              @include flex-center();
-              flex-direction: column;
-              gap: 5px;
-
-              li {
-                transition: 0.3s;
-
-                a {
-                  color: $colorPrimary;
-                  font-size: $subSubtitleDefault;
-                  font-family: $font;
-                  text-decoration: none;
-                  @include style-font();
-                }
-
-                a:hover {
-                  color: $colorTertiary;
-                }
-              }
-
-              li:hover {
-                transform: scale(1.07);
-              }
-            }
-          }
-
-          .logo {
-            margin: 0% 25% 0% 45%;
-
-            img {
-              width: 400px;
-              height: auto;
-            }
-          }
-
-          .contato {
-            @include flex-center();
-            flex-direction: column;
-
-            h3 {
-              margin-bottom: 6%;
-              @include style-font();
-            }
-
-            h4 {
-              @include style-font();
-              width: 316px;
-              margin-bottom: 6%;
-            }
-
-            .redes {
-              @include flex-center();
-              align-items: normal !important;
-              gap: 20%;
-              margin-bottom: 6%;
-
-              img {
-                transition: 0.3s;
-              }
-
-              img:hover {
-                transform: scale(1.1);
-              }
-            }
-
-            .email {
-              @include flex-center();
-              margin-right: -11%;
-
-              a {
-                text-decoration: none;
-
-                img {
-                  transition: 0.3;
-                }
-
-                img:hover {
-                  transform: scale(1.1);
-                }
-
-                h4 {
-                  margin: 0% 0% 0% 4% !important;
-                }
-              }
-            }
-          }
-        }
-
-        hr {
-          width: 85%;
-          height: 0.5px;
-          background: $colorPrimary;
-          opacity: 1 !important;
-        }
-
-        .info {
+        .footer-container{
           width: 100%;
           @include flex-center();
-          padding: 0% !important;
-          gap: 10%;
+          justify-content: space-evenly;
 
-          ul {
-            width: 100%;
-            @include flex-center();
-
-            li {
-              overflow: hidden;
-              transition: 0.3s;
-
+          .footer-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+  
+            h3{
+              font-size: 20px;
+              margin-top: 25px;
+              margin-bottom: 25px;
+            }
+  
+            img {
+              width: 250px;
+              height: 80px;
+              margin-bottom: 20px;
+            }
+          }
+  
+          .footer-links {
+            display: flex;
+            gap: 50px;
+  
+            .footer-section {
+              display: flex;
+              flex-direction: column;
+  
+              h4 {
+                margin-bottom: 10px;
+                font-size: 20px;
+              }
+  
               a {
-                @include style-font();
-                font-size: $subSubtitleDefault;
-                width: 100%;
-                padding-right: 35px;
+                color: #bbbbbb;
                 text-decoration: none;
-                color: $colorPrimary !important;
-
-                span {
-                  color: $colorTertiary;
+                margin-bottom: 5px;
+                font-size: 18px;
+  
+                &:hover {
+                  color: #579af2;
                 }
               }
             }
-
-            li:hover {
-              transform: scale(1.03);
-            }
-
-            .copy {
-              margin-right: 35%;
+          }
+  
+          .footer-pai {
+            width: 25%;
+            display: flex;
+            justify-content: flex-start;
+  
+            .redes {
+              @include flex-center();
+              justify-content: flex-start;
+              width: 10%;
+              
+  
+              img {
+                width: 30px;
+                height: auto;
+                margin: 10px;
+                margin-bottom: 20px;
+                
+              }
             }
           }
         }
 
-        //#endregion
+        .footer-final{
+          width: 90%;
+          border-top: 1px solid white;
+          @include flex-center();
+          justify-content: space-evenly;
+        }
+        
+        }
       }
-
       //#endregion
     }
   }
-}
+
