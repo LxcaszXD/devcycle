@@ -94,6 +94,7 @@ html {
 html body {
   font-family: "ROBOTO", sans-serif;
   background-color: #0e0f11;
+  overflow-x: hidden;
   z-index: -1;
 }
 html body nav .logoHeader {
@@ -570,11 +571,11 @@ html body main #servicos {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100vw !important;
-  height: 700px;
-  overflow: hidden;
+  min-height: 100vh; /* Garante que ocupa a tela inteira */
+  overflow: visible;
+  padding-top: 100px; /* Ajuste conforme necessário */
 }
-html body main #servicos .servicosContainer {
+html body main .servicosContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -583,65 +584,65 @@ html body main #servicos .servicosContainer {
   margin: 0 auto;
   padding: 1.5rem 0;
 }
-html body main #servicos .servicosContainer .servicoOne {
+html body main .servicosContainer .servicoOne {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 10%;
   min-width: 100vw;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoCont {
+html body main .servicosContainer .servicoOne .servicoCont {
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: flex-start !important;
   flex-direction: column;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoCont h4 {
+html body main .servicosContainer .servicoOne .servicoCont h4 {
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
   margin-bottom: 1%;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoCont h4 span {
+html body main .servicosContainer .servicoOne .servicoCont h4 span {
   color: #579af2;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoCont h3 {
+html body main .servicosContainer .servicoOne .servicoCont h3 {
   width: 560px;
   font-size: 2.7em;
   margin-bottom: 2%;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoCont p {
+html body main .servicosContainer .servicoOne .servicoCont p {
   color: rgba(255, 255, 255, 0.6);
   width: 550px;
   font-size: 1em;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoCont .titleItens {
+html body main .servicosContainer .servicoOne .servicoCont .titleItens {
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: flex-start !important;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoCont .titleItens h4 {
+html body main .servicosContainer .servicoOne .servicoCont .titleItens h4 {
   margin: 0px !important;
   width: 400px;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoCont .titleItens img {
+html body main .servicosContainer .servicoOne .servicoCont .titleItens img {
   width: 30px;
   height: auto;
   margin-right: 5%;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoCont .mobile img {
+html body main .servicosContainer .servicoOne .servicoCont .mobile img {
   width: auto;
   height: 30px;
   margin: 0% 6% 0% 1.5%;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoCont hr {
+html body main .servicosContainer .servicoOne .servicoCont hr {
   width: 90%;
   height: 0.5px;
   background: white;
   opacity: 0.15;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoItens {
+html body main .servicosContainer .servicoOne .servicoItens {
   display: flex;
   position: static;
   height: 700px;
@@ -650,50 +651,50 @@ html body main #servicos .servicosContainer .servicoOne .servicoItens {
   background-repeat: no-repeat;
   background-image: url(../img/background_servicos.png);
 }
-html body main #servicos .servicosContainer .servicoOne .servicoItens .servicoTitles {
+html body main .servicosContainer .servicoOne .servicoItens .servicoTitles {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoItens .servicoTitles h4 {
+html body main .servicosContainer .servicoOne .servicoItens .servicoTitles h4 {
   font-weight: bold;
   font-size: 1, 2em;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoItens .servicoTitles p {
+html body main .servicosContainer .servicoOne .servicoItens .servicoTitles p {
   font-size: 1em;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 2%;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoItens .servicoTitles img {
+html body main .servicosContainer .servicoOne .servicoItens .servicoTitles img {
   width: 20px;
   height: auto;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoItens .manutencao {
+html body main .servicosContainer .servicoOne .servicoItens .manutencao {
   left: 100px;
   top: -65px;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoItens .seo {
+html body main .servicosContainer .servicoOne .servicoItens .seo {
   left: 160px;
   top: 40px;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoItens .icons {
+html body main .servicosContainer .servicoOne .servicoItens .icons {
   position: relative;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoItens .icons img {
+html body main .servicosContainer .servicoOne .servicoItens .icons img {
   width: 60px;
   height: auto;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoItens .manutencaoIcon {
+html body main .servicosContainer .servicoOne .servicoItens .manutencaoIcon {
   left: 111px;
   top: 173px;
 }
-html body main #servicos .servicosContainer .servicoOne .servicoItens .marketingIcon {
+html body main .servicosContainer .servicoOne .servicoItens .marketingIcon {
   left: -83px;
   top: 463px;
 }
-html body main #servicos .servicosContainer .servicoTwo {
+html body main .servicosContainer .servicoTwo {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -705,19 +706,19 @@ html body main #servicos .servicosContainer .servicoTwo {
   padding-top: 10%;
   height: auto;
 }
-html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont {
+html body main .servicosContainer .servicoTwo .servicoTwoCont {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens {
+html body main .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10%;
 }
-html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens {
+html body main .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -727,25 +728,25 @@ html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servico
   margin-bottom: 3%;
   padding: 3% 7% 3% 7%;
 }
-html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens .imgIcon {
+html body main .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens .imgIcon {
   background: #579af2;
   padding: 3.5%;
   border-radius: 50%;
   margin-right: 5%;
 }
-html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens .imgIcon img {
+html body main .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens .imgIcon img {
   width: 60px;
   height: auto;
 }
-html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens h4 {
+html body main .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens h4 {
   font-weight: bold;
 }
-html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens p {
+html body main .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens p {
   width: 400px;
   color: rgba(255, 255, 255, 0.6);
   font-weight: bold;
 }
-html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo {
+html body main .servicosContainer .servicoTwo .servicoTwoItensTwo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -755,51 +756,51 @@ html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo {
   margin-bottom: 0%;
   padding: 3% 7% 3% 7%;
 }
-html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo .imgIcon {
+html body main .servicosContainer .servicoTwo .servicoTwoItensTwo .imgIcon {
   background: #579af2;
   padding: 3.5%;
   border-radius: 50%;
   margin-right: 5%;
 }
-html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo .imgIcon img {
+html body main .servicosContainer .servicoTwo .servicoTwoItensTwo .imgIcon img {
   width: 60px;
   height: auto;
 }
-html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo h4 {
+html body main .servicosContainer .servicoTwo .servicoTwoItensTwo h4 {
   font-weight: bold;
 }
-html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo p {
+html body main .servicosContainer .servicoTwo .servicoTwoItensTwo p {
   width: 400px;
   color: rgba(255, 255, 255, 0.6);
   font-weight: bold;
 }
-html body main #servicos .servicosContainer .conection {
+html body main .servicosContainer .conection {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
-html body main #servicos .servicosContainer .conection hr {
+html body main .servicosContainer .conection hr {
   background-color: #579af2 !important;
   opacity: 1 !important;
   margin: 0% !important;
   border-radius: 0px !important;
 }
-html body main #servicos .servicosContainer .conection .horiOne {
+html body main .servicosContainer .conection .horiOne {
   display: flex;
   width: 94px;
   position: relative;
   top: -460px;
   left: 197px;
 }
-html body main #servicos .servicosContainer .conection .horiTwo {
+html body main .servicosContainer .conection .horiTwo {
   display: flex;
   width: 94px;
   position: relative;
   top: -270px;
   left: 103px;
 }
-html body main #servicos .servicosContainer .conection .vertOne {
+html body main .servicosContainer .conection .vertOne {
   display: flex;
   width: 300px;
   position: relative;
@@ -807,20 +808,21 @@ html body main #servicos .servicosContainer .conection .vertOne {
   left: -94px;
   transform: rotate(90deg);
 }
-html body main #portifolio {
+html body #portifolio {
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: 4% 0% 3% 0%;
 }
-html body main #portifolio .site {
+html body #portifolio .site {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-html body main #portifolio .port-card {
+html body #portifolio .port-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -829,16 +831,16 @@ html body main #portifolio .port-card {
   height: auto;
   z-index: 9999;
 }
-html body main #portifolio .port-card h2 {
+html body #portifolio .port-card h2 {
   color: white;
   font-size: 7.5em;
   text-align: center;
   font-weight: bold;
 }
-html body main #portifolio .port-card h2 span {
+html body #portifolio .port-card h2 span {
   color: #579af2;
 }
-html body main #portifolio .port-card h4 {
+html body #portifolio .port-card h4 {
   color: white;
   margin-top: 1%;
   text-align: center;
@@ -846,7 +848,7 @@ html body main #portifolio .port-card h4 {
   font-weight: 300;
   font-size: 1.5rem;
 }
-html body main #portifolio .card-port {
+html body #portifolio .card-port {
   display: flex;
   margin-top: 1.5%;
   width: 80%;
@@ -857,12 +859,99 @@ html body main #portifolio .card-port {
   gap: 3.5%;
   /* Espaçamento entre os cards */
 }
-html body main #portifolio .card-port .card {
+html body #portifolio .card-port .card-progranac {
   width: 30%;
   height: 600px;
   border-radius: 20px;
   display: flex;
-  background-image: url(../img/rrgarage.png);
+  background-image: url(../img/progranac.png);
+  background-size: cover;
+  flex-direction: column;
+  /* Alinha os elementos na vertical */
+  align-items: center;
+  justify-content: center;
+  /* Faz a imagem ocupar toda a largura */
+  /* Garante que a imagem vá até o topo */
+  background-color: #f0f0f0;
+  /* Apenas para referência visual */
+  overflow: hidden;
+  /* Evita qualquer transbordamento */
+  cursor: pointer;
+  transition: background-position 3s ease-in-out;
+  /* From Uiverse.io by vinodjangid07 */
+}
+html body #portifolio .card-port .card-progranac img {
+  width: 100%;
+  height: 100%;
+  /* Agora a imagem ocupa toda a altura do card */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Garante que a imagem cubra todo o espaço */
+  border-radius: 20px 20px 0 0;
+  /* Arredondamento apenas no topo */
+}
+html body #portifolio .card-port .card-progranac .button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #579af2;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(87, 154, 242, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  top: 250px;
+}
+html body #portifolio .card-port .card-progranac .button .svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+html body #portifolio .card-port .card-progranac .button .svgIcon path {
+  fill: white;
+}
+html body #portifolio .card-port .card-progranac .button:hover {
+  width: 140px;
+  border-radius: 50px;
+  background-color: #0e0f11;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+html body #portifolio .card-port .card-progranac .button:hover .svgIcon {
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+html body #portifolio .card-port .card-progranac .button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "VER MAIS";
+  color: white;
+  font-size: 0px;
+}
+html body #portifolio .card-port .card-progranac .button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+html body #portifolio .card-port .card-progranac a {
+  text-decoration: none;
+}
+html body #portifolio .card-port .card-progranac h3 {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0px;
+}
+html body #portifolio .card-senacria {
+  width: 30%;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  background-image: url(../img/senacria.png);
   background-size: cover;
   flex-direction: column;
   /* Alinha os elementos na vertical */
@@ -877,7 +966,7 @@ html body main #portifolio .card-port .card {
   cursor: pointer;
   transition: background-position 3s ease-in-out;
 }
-html body main #portifolio .card-port .card img {
+html body #portifolio .card-senacria img {
   width: 100%;
   height: 100%;
   /* Agora a imagem ocupa toda a altura do card */
@@ -887,33 +976,162 @@ html body main #portifolio .card-port .card img {
   border-radius: 20px 20px 0 0;
   /* Arredondamento apenas no topo */
 }
-html body main #portifolio .card-port .card button {
-  width: 280px;
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background: rgba(80, 80, 80, 0.7);
-  border-radius: 25px;
+html body #portifolio .card-senacria .button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #579af2;
   border: none;
-  margin-top: auto;
-  /* Empurra o botão para o final do card */
-  margin-bottom: 20px;
-  /* Pequeno espaço entre o botão e o final */
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(87, 154, 242, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  top: 250px;
 }
-html body main #portifolio .card-port .card button h3 {
+html body #portifolio .card-senacria .button .svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+html body #portifolio .card-senacria .button .svgIcon path {
+  fill: white;
+}
+html body #portifolio .card-senacria .button:hover {
+  width: 140px;
+  border-radius: 50px;
+  background-color: #0e0f11;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+html body #portifolio .card-senacria .button:hover .svgIcon {
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+html body #portifolio .card-senacria .button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "VER MAIS";
+  color: white;
+  font-size: 0px;
+}
+html body #portifolio .card-senacria .button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+html body #portifolio .card-senacria a {
+  text-decoration: none;
+}
+html body #portifolio .card-senacria h3 {
   font-weight: bold;
   font-size: 2em;
   margin: 0px;
 }
-html body main #portifolio .card-port .card:hover {
+html body .card-solarprog {
+  width: 30%;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  background-image: url(../img/senacria.png);
+  background-size: cover;
+  flex-direction: column;
+  /* Alinha os elementos na vertical */
+  align-items: center;
+  justify-content: center;
+  /* Faz a imagem ocupar toda a largura */
+  /* Garante que a imagem vá até o topo */
+  background-color: #f0f0f0;
+  /* Apenas para referência visual */
+  overflow: hidden;
+  /* Evita qualquer transbordamento */
+  cursor: pointer;
+  transition: background-position 3s ease-in-out;
+}
+html body .card-solarprog img {
+  width: 100%;
+  height: 100%;
+  /* Agora a imagem ocupa toda a altura do card */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Garante que a imagem cubra todo o espaço */
+  border-radius: 20px 20px 0 0;
+  /* Arredondamento apenas no topo */
+}
+html body .card-solarprog .button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #579af2;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(87, 154, 242, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  top: 250px;
+}
+html body .card-solarprog .button .svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+html body .card-solarprog .button .svgIcon path {
+  fill: white;
+}
+html body .card-solarprog .button:hover {
+  width: 140px;
+  border-radius: 50px;
+  background-color: #0e0f11;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+html body .card-solarprog .button:hover .svgIcon {
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+html body .card-solarprog .button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "VER MAIS";
+  color: white;
+  font-size: 0px;
+}
+html body .card-solarprog .button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+html body .card-solarprog a {
+  text-decoration: none;
+}
+html body .card-solarprog h3 {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0px;
+}
+html .card-progranac:hover {
   background-position: 0% 100%;
 }
-html body main #portifolio .button {
+html .card-senacria:hover {
+  background-position: 0% 100%;
+}
+html .card-solarprog:hover {
+  background-position: 0% 100%;
+}
+
+.button {
   /* From Uiverse.io by alexmaracinaru */
 }
-html body main #portifolio .button .cta {
+.button .cta {
   position: relative;
   margin: auto;
   padding: 12px 18px;
@@ -926,7 +1144,7 @@ html body main #portifolio .button .cta {
   align-items: center;
   justify-content: center;
 }
-html body main #portifolio .button .cta:before {
+.button .cta:before {
   content: "";
   position: absolute;
   top: 0;
@@ -938,7 +1156,7 @@ html body main #portifolio .button .cta:before {
   height: 45px;
   transition: all 0.3s ease;
 }
-html body main #portifolio .button .cta span {
+.button .cta span {
   position: relative;
   font-family: "Ubuntu", sans-serif;
   font-size: 21px;
@@ -946,7 +1164,7 @@ html body main #portifolio .button .cta span {
   letter-spacing: 0.05em;
   color: #ffffff;
 }
-html body main #portifolio .button .cta svg {
+.button .cta svg {
   position: relative;
   top: 0;
   margin-left: 10px;
@@ -958,17 +1176,18 @@ html body main #portifolio .button .cta svg {
   transform: translateX(-5px);
   transition: all 0.3s ease;
 }
-html body main #portifolio .button .cta:hover:before {
+.button .cta:hover:before {
   width: 100%;
   background: #579af2;
 }
-html body main #portifolio .button .cta:hover svg {
+.button .cta:hover svg {
   transform: translateX(0);
 }
-html body main #portifolio .button .cta:active {
+.button .cta:active {
   transform: scale(0.95);
 }
-html body main #solucoes {
+
+#solucoes {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -977,7 +1196,7 @@ html body main #solucoes {
   margin: 0 auto;
   padding: 1.5rem 0;
 }
-html body main #solucoes .solucoesCont {
+#solucoes .solucoesCont {
   width: 100%;
   display: flex;
   align-items: center;
@@ -988,25 +1207,25 @@ html body main #solucoes .solucoesCont {
   padding: 4%;
   border-radius: 25px;
 }
-html body main #solucoes .solucoesCont div {
+#solucoes .solucoesCont div {
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: flex-start !important;
   flex-direction: column;
 }
-html body main #solucoes .solucoesCont div h2 {
+#solucoes .solucoesCont div h2 {
   color: rgba(255, 255, 255, 0.7) !important;
 }
-html body main #solucoes .solucoesCont div p {
+#solucoes .solucoesCont div p {
   color: rgba(255, 255, 255, 0.6);
   width: 700px;
 }
-html body main #solucoes .solucoesCont div {
+#solucoes .solucoesCont div {
   margin-left: 6%;
   /* From Uiverse.io by alexmaracinaru */
 }
-html body main #solucoes .solucoesCont div .cta {
+#solucoes .solucoesCont div .cta {
   position: relative;
   margin: auto;
   padding: 12px 18px;
@@ -1016,7 +1235,7 @@ html body main #solucoes .solucoesCont div .cta {
   cursor: pointer;
   margin-top: 50px;
 }
-html body main #solucoes .solucoesCont div .cta:before {
+#solucoes .solucoesCont div .cta:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1028,7 +1247,7 @@ html body main #solucoes .solucoesCont div .cta:before {
   height: 45px;
   transition: all 0.3s ease;
 }
-html body main #solucoes .solucoesCont div .cta span {
+#solucoes .solucoesCont div .cta span {
   position: relative;
   font-family: "Ubuntu", sans-serif;
   font-size: 21px;
@@ -1036,7 +1255,7 @@ html body main #solucoes .solucoesCont div .cta span {
   letter-spacing: 0.05em;
   color: #ffffff;
 }
-html body main #solucoes .solucoesCont div .cta svg {
+#solucoes .solucoesCont div .cta svg {
   position: relative;
   top: 0;
   margin-left: 10px;
@@ -1048,19 +1267,20 @@ html body main #solucoes .solucoesCont div .cta svg {
   transform: translateX(-5px);
   transition: all 0.3s ease;
 }
-html body main #solucoes .solucoesCont div .cta:hover:before {
+#solucoes .solucoesCont div .cta:hover:before {
   width: 100%;
   background: #579af2;
 }
-html body main #solucoes .solucoesCont div .cta:hover svg {
+#solucoes .solucoesCont div .cta:hover svg {
   transform: translateX(0);
 }
-html body main #solucoes .solucoesCont div .cta:active {
+#solucoes .solucoesCont div .cta:active {
   transform: scale(0.95);
 }
-html body main #contato {
+
+#contato {
   width: 100%;
-  height: 500px;
+  height: auto;
   margin-top: 15%;
   display: flex;
   align-items: center;
@@ -1068,22 +1288,22 @@ html body main #contato {
   flex-direction: column;
   /* From Uiverse.io by alexmaracinaru */
 }
-html body main #contato h2 {
+#contato h2 {
   font-size: 7em;
 }
-html body main #contato h2 span {
+#contato h2 span {
   color: #579af2;
 }
-html body main #contato h3 {
+#contato h3 {
   margin-top: 5%;
   margin-bottom: 1%;
 }
-html body main #contato p {
+#contato p {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-html body main #contato .pergunta {
+#contato .pergunta {
   width: 50%;
   background: transparent;
   margin-top: 1%;
@@ -1094,7 +1314,7 @@ html body main #contato .pergunta {
   /* Remove a borda padrão do botão */
   /* Deixa a seta branca */
 }
-html body main #contato .pergunta .accordion-button {
+#contato .pergunta .accordion-button {
   background-color: transparent !important;
   border: none;
   color: #fff;
@@ -1103,29 +1323,29 @@ html body main #contato .pergunta .accordion-button {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
 }
-html body main #contato .pergunta .accordion-collapse {
+#contato .pergunta .accordion-collapse {
   transition: height 0.5s;
 }
-html body main #contato .pergunta .accordion-button:hover {
+#contato .pergunta .accordion-button:hover {
   color: #579af2;
 }
-html body main #contato .pergunta .accordion-item {
+#contato .pergunta .accordion-item {
   border: none;
   background-color: transparent !important;
 }
-html body main #contato .pergunta .accordion-body {
+#contato .pergunta .accordion-body {
   background-color: rgba(0, 0, 0, 0);
   /* Fundo semi-transparente */
   color: #fff;
 }
-html body main #contato .pergunta .accordion-button:focus {
+#contato .pergunta .accordion-button:focus {
   box-shadow: none;
 }
-html body main #contato .pergunta .accordion-button::after {
+#contato .pergunta .accordion-button::after {
   background-image: url(../img/plus_icon.png);
   /* Inverte a cor padrão da seta (de preto para branco) */
 }
-html body main #contato .cta {
+#contato .cta {
   position: relative;
   margin: auto;
   padding: 12px 18px;
@@ -1138,7 +1358,7 @@ html body main #contato .cta {
   align-items: center;
   justify-content: center;
 }
-html body main #contato .cta:before {
+#contato .cta:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1150,7 +1370,7 @@ html body main #contato .cta:before {
   height: 45px;
   transition: all 0.3s ease;
 }
-html body main #contato .cta span {
+#contato .cta span {
   position: relative;
   font-family: "Ubuntu", sans-serif;
   font-size: 21px;
@@ -1158,7 +1378,7 @@ html body main #contato .cta span {
   letter-spacing: 0.05em;
   color: #ffffff;
 }
-html body main #contato .cta svg {
+#contato .cta svg {
   position: relative;
   top: 0;
   margin-left: 10px;
@@ -1170,18 +1390,19 @@ html body main #contato .cta svg {
   transform: translateX(-5px);
   transition: all 0.3s ease;
 }
-html body main #contato .cta:hover:before {
+#contato .cta:hover:before {
   width: 100%;
   background: #579af2;
 }
-html body main #contato .cta:hover svg {
+#contato .cta:hover svg {
   transform: translateX(0);
 }
-html body main #contato .cta:active {
+#contato .cta:active {
   transform: scale(0.95);
 }
-html body main .footer {
-  margin-top: 250px;
+
+.footer {
+  margin-top: 135px;
   padding: 40px;
   display: flex;
   align-items: center;
@@ -1190,68 +1411,128 @@ html body main .footer {
   flex-direction: column;
   width: 100%;
 }
-html body main .footer .footer-container {
+.footer .footer-container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-evenly;
 }
-html body main .footer .footer-container .footer-logo {
+.footer .footer-container .footer-logo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-html body main .footer .footer-container .footer-logo h3 {
+.footer .footer-container .footer-logo h3 {
   font-size: 20px;
   margin-top: 25px;
   margin-bottom: 25px;
 }
-html body main .footer .footer-container .footer-logo img {
+.footer .footer-container .footer-logo img {
   width: 250px;
   height: 80px;
   margin-bottom: 20px;
 }
-html body main .footer .footer-container .footer-links {
+.footer .footer-container .footer-links {
   display: flex;
   gap: 50px;
 }
-html body main .footer .footer-container .footer-links .footer-section {
+.footer .footer-container .footer-links .footer-section {
   display: flex;
   flex-direction: column;
 }
-html body main .footer .footer-container .footer-links .footer-section h4 {
+.footer .footer-container .footer-links .footer-section h4 {
   margin-bottom: 10px;
   font-size: 20px;
 }
-html body main .footer .footer-container .footer-links .footer-section a {
+.footer .footer-container .footer-links .footer-section a {
   color: #bbbbbb;
   text-decoration: none;
   margin-bottom: 5px;
   font-size: 18px;
 }
-html body main .footer .footer-container .footer-links .footer-section a:hover {
+.footer .footer-container .footer-links .footer-section a:hover {
   color: #579af2;
 }
-html body main .footer .footer-container .footer-pai {
+.footer .footer-container .footer-pai {
   width: 25%;
   display: flex;
   justify-content: flex-start;
+  /* From Uiverse.io by elisapi */
+  /* for all social containers*/
+  /* instagram*/
+  /* twitter*/
+  /* linkdin*/
+  /* Whatsapp*/
 }
-html body main .footer .footer-container .footer-pai .redes {
+.footer .footer-container .footer-pai .card {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: transparent;
+  flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: flex-start;
-  width: 10%;
+  padding: 15px;
+  gap: 20px;
 }
-html body main .footer .footer-container .footer-pai .redes img {
-  width: 30px;
-  height: auto;
-  margin: 10px;
-  margin-bottom: 20px;
+.footer .footer-container .footer-pai .socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(105, 105, 105);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  border-radius: 30px;
 }
-html body main .footer-final {
+.footer .footer-container .footer-pai .containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+.footer .footer-container .footer-pai .containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+.footer .footer-container .footer-pai .containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+.footer .footer-container .footer-pai .containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+.footer .footer-container .footer-pai .socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+.footer .footer-container .footer-pai .socialSvg {
+  width: 17px;
+}
+.footer .footer-container .footer-pai .socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+.footer .footer-container .footer-pai .socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.footer .footer-final {
   width: 90%;
   border-top: 1px solid white;
   display: flex;
@@ -1259,7 +1540,7 @@ html body main .footer-final {
   justify-content: center;
   justify-content: space-evenly;
 }
-html body main .paragrafo {
+.footer .paragrafo {
   color: rgb(150, 150, 150);
   font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
