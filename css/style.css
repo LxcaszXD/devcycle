@@ -233,6 +233,14 @@ html body main #home h3 .m {
   text-shadow: 0 0 0 #faebd7;
   animation: loading 1.5s ease-in-out infinite alternate;
 }
+@media only screen and (max-width: 1025px) {
+  html body main #home h1 {
+    font-size: 8vw;
+  }
+  html body main #home h3 {
+    font-size: 2.5vw;
+  }
+}
 @keyframes loading {
   to {
     text-shadow: 20px 0 70px #579af2;
@@ -240,67 +248,67 @@ html body main #home h3 .m {
   }
 }
 html body main #home .loader span:nth-child(2) {
-  animation-delay: 0.1s;
-}
-html body main #home .loader span:nth-child(3) {
   animation-delay: 0.2s;
 }
-html body main #home .loader span:nth-child(4) {
+html body main #home .loader span:nth-child(3) {
   animation-delay: 0.3s;
 }
-html body main #home .loader span:nth-child(5) {
+html body main #home .loader span:nth-child(4) {
   animation-delay: 0.4s;
 }
-html body main #home .loader span:nth-child(6) {
+html body main #home .loader span:nth-child(5) {
   animation-delay: 0.5s;
 }
-html body main #home .loader span:nth-child(7) {
+html body main #home .loader span:nth-child(6) {
   animation-delay: 0.6s;
 }
-html body main #home .loader span:nth-child(8) {
+html body main #home .loader span:nth-child(7) {
   animation-delay: 0.7s;
 }
-html body main #home .loader span:nth-child(9) {
+html body main #home .loader span:nth-child(8) {
   animation-delay: 0.8s;
 }
-html body main #home .loader span:nth-child(10) {
+html body main #home .loader span:nth-child(9) {
   animation-delay: 0.9s;
 }
-html body main #home .loader span:nth-child(11) {
+html body main #home .loader span:nth-child(10) {
   animation-delay: 1s;
 }
-html body main #home .loader span:nth-child(12) {
+html body main #home .loader span:nth-child(11) {
   animation-delay: 1.1s;
 }
-html body main #home .loader span:nth-child(13) {
+html body main #home .loader span:nth-child(12) {
   animation-delay: 1.2s;
 }
-html body main #home .loader span:nth-child(14) {
+html body main #home .loader span:nth-child(13) {
   animation-delay: 1.3s;
 }
-html body main #home .loader span:nth-child(15) {
+html body main #home .loader span:nth-child(14) {
   animation-delay: 1.4s;
 }
-html body main #home .loader span:nth-child(16) {
+html body main #home .loader span:nth-child(15) {
   animation-delay: 1.5s;
 }
-html body main #home .loader span:nth-child(17) {
+html body main #home .loader span:nth-child(16) {
   animation-delay: 1.6s;
 }
-html body main #home .loader span:nth-child(18) {
+html body main #home .loader span:nth-child(17) {
   animation-delay: 1.7s;
 }
-html body main #home .loader span:nth-child(19) {
+html body main #home .loader span:nth-child(18) {
   animation-delay: 1.8s;
 }
-html body main #home .loader span:nth-child(20) {
+html body main #home .loader span:nth-child(19) {
   animation-delay: 1.9s;
 }
-html body main #home .loader span:nth-child(21) {
+html body main #home .loader span:nth-child(20) {
   animation-delay: 2s;
 }
-html body main #home .loader span:nth-child(22) {
+html body main #home .loader span:nth-child(21) {
   animation-delay: 2.1s;
+}
+html body main #home .loader span:nth-child(22) {
+  animation-delay: 2.2s;
 }
 html body main #carouselCont {
   width: 100%;
@@ -336,9 +344,14 @@ html body main #carouselCont .parceiros h2 span {
 }
 html body main #carouselCont .parceiros .carousel {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 50px;
+}
+@media only screen and (max-width: 1025px) {
+  html body main #carouselCont .parceiros .carousel img {
+    height: 70%;
+  }
 }
 html body main #carouselCont .parceiros .gradiente {
   position: absolute;
@@ -563,6 +576,12 @@ html body main #nossoParceiro .parceiroCont .icone p {
 html body main #nossoParceiro .parceiroCont :first-child {
   margin-left: 2%;
 }
+@media only screen and (max-width: 1025px) {
+  html body main #nossoParceiro .parceiroCont {
+    width: 90%;
+    background-size: 100% 100%;
+  }
+}
 html body main #servicos {
   width: 100%;
   max-width: 1200px;
@@ -571,9 +590,11 @@ html body main #servicos {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Garante que ocupa a tela inteira */
+  min-height: 100vh;
+  /* Garante que ocupa a tela inteira */
   overflow: visible;
-  padding-top: 100px; /* Ajuste conforme necessário */
+  padding-top: 100px;
+  /* Ajuste conforme necessário */
 }
 html body main .servicosContainer {
   display: flex;

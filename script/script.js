@@ -7,7 +7,7 @@ window.onload = function () {
 const particles = Particles.init({
   selector: ".background",
   color: ["#579AF2", "#F25D07"], // Azul e Laranja Neon
-  maxParticles: 200,
+  maxParticles: 150,
   connectParticles: true, // Conecta as partículas
   move: {
     enable: true,
