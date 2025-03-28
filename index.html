@@ -1,738 +1,911 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DevCycle</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<head>
-  <meta charset="UTF-8">
-  <title>DevCycle</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+    />
 
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://public.codepenassets.com/css/normalize-5.0.0.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="css/style.css">
+  <body>
 
-</head>
-
-<body>
-
-  <header>
-    <nav class="menu-lateral">
-      <div class="logoHeader">
-        <img src="img/logo_devcycle.png" alt="">
-      </div>
-
-      <ul>
-        <li class="item-menu">
-          <a href="#home">
-            <span class="icon"><i class="bi bi-house"></i></span>
-            <span class="txt-link">Home</span>
-          </a>
-        </li>
-        <li class="item-menu">
-          <a href="#sobre">
-            <span class="icon"><i class="bi bi-person-raised-hand"></i></span>
-            <span class="txt-link">Sobre</span>
-          </a>
-        </li>
-        <li class="item-menu">
-          <a href="#servicos">
-            <span class="icon"><i class="bi bi-columns-gap"></i></span>
-            <span class="txt-link">Serviços</span>
-          </a>
-        </li>
-        <li class="item-menu">
-          <a href="#contato">
-            <span class="icon"><i class="bi bi-chat-right"></i></span>
-            <span class="txt-link">Contato</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-
-
-  <main>
-
-    <section id="home">
-      <div class="home-inner">
-        <h1>Dev <span>Cycle</span></h1>
-        <h3 class="span loader"><span class="m">B</span><span class="m">E</span><span class="m">N</span><span
-            class="m">E</span><span class="m">F</span><span class="m">I</span><span class="m">C</span><span
-            class="m">I</span><span class="m">O</span><span class="m">S</span><span class="m">&nbsp;</span><span
-            class="m">D</span><span class="m">A</span><span class="m">&nbsp;</span><span class="m">T</span><span
-            class="m">E</span><span class="m">C</span><span class="m">N</span><span class="m">O</span><span
-            class="m">L</span><span class="m">O</span><span class="m">G</span><span class="m">I</span><span
-            class="m">A</span></h3>
-      </div>
-      <canvas class="background"></canvas>
-    </section>
-
-    <section id="carouselCont">
-      <div class="parceiros">
-        <h2>Nossos <span>Parceiros</span> </h2>
-        <div class="carousel">
-          <img src="img/logo_worlddev.png" alt="Logo World Dev">
-          <img src="img/logo_solarprog.png" alt="Logo SolarProg">
-          <img src="img/logo_progranac.png" alt="Logo Progranac">
-          <img src="img/logo_senacria.png" alt="Logo SenaCria">
-          <img src="img/logo_worlddev.png" alt="Logo World Dev">
-          <img src="img/logo_solarprog.png" alt="Logo SolarProg">
-          <img src="img/logo_progranac.png" alt="Logo Progranac">
-          <img src="img/logo_senacria.png" alt="Logo SenaCria">
-          <img src="img/logo_worlddev.png" alt="Logo World Dev">
-          <img src="img/logo_solarprog.png" alt="Logo SolarProg">
-          <img src="img/logo_progranac.png" alt="Logo Progranac">
-          <img src="img/logo_senacria.png" alt="Logo SenaCria">
-          <img src="img/logo_worlddev.png" alt="Logo World Dev">
-          <img src="img/logo_solarprog.png" alt="Logo SolarProg">
-          <img src="img/logo_progranac.png" alt="Logo Progranac">
-          <img src="img/logo_senacria.png" alt="Logo SenaCria">
+    <header>
+      <nav class="menu-lateral">
+        <div class="logoHeader">
+          <img src="img/logo_devcycle.png" alt="" />
         </div>
-        <div class="gradiente"></div>
-      </div>
 
-      <div class="tecnologias ">
-        <h2>Tecnologias</h2>
-        <div class="carouselTec">
-          <div>
-            <h4>HTML</h4>
-            <img src="img/logo_html.png" alt="Logo HTML">
-            <p>HTML (HyperText Markup Language) é a linguagem que estrutura páginas da web usando tags para organizar
-              conteúdos.</p>
+        <ul>
+          <li class="item-menu">
+            <a href="#home">
+              <span class="icon"><i class="bi bi-house"></i></span>
+              <span class="txt-link">Home</span>
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="#sobre">
+              <span class="icon"><i class="bi bi-person-raised-hand"></i></span>
+              <span class="txt-link">Sobre</span>
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="#servicos">
+              <span class="icon"><i class="bi bi-columns-gap"></i></span>
+              <span class="txt-link">Serviços</span>
+            </a>
+          </li>
+          <li class="item-menu">
+            <a href="#contato">
+              <span class="icon"><i class="bi bi-chat-right"></i></span>
+              <span class="txt-link">Contato</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section id="home">
+        <div class="home-inner">
+          <h1>Dev <span>Cycle</span></h1>
+          <h3 class="span loader">
+            <span class="m">B</span><span class="m">E</span
+            ><span class="m">N</span><span class="m">E</span
+            ><span class="m">F</span><span class="m">I</span
+            ><span class="m">C</span><span class="m">I</span
+            ><span class="m">O</span><span class="m">S</span
+            ><span class="m">&nbsp;</span><span class="m">D</span
+            ><span class="m">A</span><span class="m">&nbsp;</span
+            ><span class="m">T</span><span class="m">E</span
+            ><span class="m">C</span><span class="m">N</span
+            ><span class="m">O</span><span class="m">L</span
+            ><span class="m">O</span><span class="m">G</span
+            ><span class="m">I</span><span class="m">A</span>
+          </h3>
+        </div>
+        <canvas class="background"></canvas>
+      </section>
+
+      <section id="carouselCont">
+        <div class="parceiros">
+          <h2>Nossos <span>Parceiros</span></h2>
+          <div class="carousel">
+            <img src="img/logo_worlddev.png" alt="Logo World Dev" />
+            <img src="img/logo_solarprog.png" alt="Logo SolarProg" />
+            <img src="img/logo_progranac.png" alt="Logo Progranac" />
+            <img src="img/logo_senacria.png" alt="Logo SenaCria" />
+            <img src="img/logo_worlddev.png" alt="Logo World Dev" />
+            <img src="img/logo_solarprog.png" alt="Logo SolarProg" />
+            <img src="img/logo_progranac.png" alt="Logo Progranac" />
+            <img src="img/logo_senacria.png" alt="Logo SenaCria" />
+            <img src="img/logo_worlddev.png" alt="Logo World Dev" />
+            <img src="img/logo_solarprog.png" alt="Logo SolarProg" />
+            <img src="img/logo_progranac.png" alt="Logo Progranac" />
+            <img src="img/logo_senacria.png" alt="Logo SenaCria" />
+            <img src="img/logo_worlddev.png" alt="Logo World Dev" />
+            <img src="img/logo_solarprog.png" alt="Logo SolarProg" />
+            <img src="img/logo_progranac.png" alt="Logo Progranac" />
+            <img src="img/logo_senacria.png" alt="Logo SenaCria" />
           </div>
+          <div class="gradiente"></div>
+        </div>
 
-          <div>
-            <h4>CSS</h4>
-            <img src="img/logo_css.png" alt="Logo CSS">
-            <p>CSS (Cascading Style Sheets) é a linguagem usada para estilizar páginas da web, definindo cores, fontes,
-              layouts e responsividade.</p>
-          </div>
+        <div class="tecnologias">
+          <h2>Tecnologias</h2>
+          <div class="carouselTec">
+            <div>
+              <h4>HTML</h4>
+              <img src="img/logo_html.png" alt="Logo HTML" />
+              <p>
+                HTML (HyperText Markup Language) é a linguagem que estrutura
+                páginas da web usando tags para organizar conteúdos.
+              </p>
+            </div>
 
-          <div>
-            <h4>JavaScript</h4>
-            <img src="img/logo_js.png" alt="Logo JavaScript">
-            <p>JS (JavaScript) é uma linguagem de programação que adiciona interatividade e dinamismo às páginas da web,
-              manipulando elementos e eventos.</p>
-          </div>
+            <div>
+              <h4>CSS</h4>
+              <img src="img/logo_css.png" alt="Logo CSS" />
+              <p>
+                CSS (Cascading Style Sheets) é a linguagem usada para estilizar
+                páginas da web, definindo cores, fontes, layouts e
+                responsividade.
+              </p>
+            </div>
 
-          <div>
-            <h4>PHP</h4>
-            <img src="img/logo_php.png" alt="Logo PHP">
-            <p>PHP é uma linguagem de programação server-side usada para criar sites dinâmicos, processar formulários e
-              interagir com bancos de dados.</p>
-          </div>
+            <div>
+              <h4>JavaScript</h4>
+              <img src="img/logo_js.png" alt="Logo JavaScript" />
+              <p>
+                JS (JavaScript) é uma linguagem de programação que adiciona
+                interatividade e dinamismo às páginas da web, manipulando
+                elementos e eventos.
+              </p>
+            </div>
 
-          <div>
-            <h4>React</h4>
-            <img src="img/logo_react.png" alt="Logo React">
-            <p>React é uma biblioteca JavaScript para criar interfaces dinâmicas e reutilizáveis, baseada em componentes
-              e atualização eficiente do DOM.</p>
-          </div>
+            <div>
+              <h4>PHP</h4>
+              <img src="img/logo_php.png" alt="Logo PHP" />
+              <p>
+                PHP é uma linguagem de programação server-side usada para criar
+                sites dinâmicos, processar formulários e interagir com bancos de
+                dados.
+              </p>
+            </div>
 
-          <div>
-            <h4>Python</h4>
-            <img src="img/logo_python.png" alt="Logo Python">
-            <p>Python é uma linguagem de programação de alto nível, simples e versátil, usada em diversas áreas como
-              web, dados e inteligência artificial.</p>
-          </div>
+            <div>
+              <h4>React</h4>
+              <img src="img/logo_react.png" alt="Logo React" />
+              <p>
+                React é uma biblioteca JavaScript para criar interfaces
+                dinâmicas e reutilizáveis, baseada em componentes e atualização
+                eficiente do DOM.
+              </p>
+            </div>
 
-          <div>
-            <h4>C#</h4>
-            <img src="img/logo_csharp.png" alt="Logo C#">
-            <p>C# é uma linguagem de programação orientada a objetos, usada para criar aplicativos e jogos,
-              especialmente com o .NET.</p>
-          </div>
+            <div>
+              <h4>Python</h4>
+              <img src="img/logo_python.png" alt="Logo Python" />
+              <p>
+                Python é uma linguagem de programação de alto nível, simples e
+                versátil, usada em diversas áreas como web, dados e inteligência
+                artificial.
+              </p>
+            </div>
 
-          <div>
-            <h4>MySQL</h4>
-            <img src="img/logo_mysql.png" alt="Logo MySQL">
-            <p>MySQL é um sistema de gerenciamento de banco de dados relacional, usado para armazenar e gerenciar dados
-              em aplicações web e outras.</p>
-          </div>
+            <div>
+              <h4>C#</h4>
+              <img src="img/logo_csharp.png" alt="Logo C#" />
+              <p>
+                C# é uma linguagem de programação orientada a objetos, usada
+                para criar aplicativos e jogos, especialmente com o .NET.
+              </p>
+            </div>
 
-          <div>
-            <h4>BootStrap</h4>
-            <img src="img/logo_bootstrap.png" alt="Logo BootStrap">
-            <p>Bootstrap é um framework front-end que facilita o desenvolvimento de páginas web responsivas e
-              estilizadas, utilizando HTML, CSS e JavaScript.</p>
-          </div>
+            <div>
+              <h4>MySQL</h4>
+              <img src="img/logo_mysql.png" alt="Logo MySQL" />
+              <p>
+                MySQL é um sistema de gerenciamento de banco de dados
+                relacional, usado para armazenar e gerenciar dados em aplicações
+                web e outras.
+              </p>
+            </div>
 
-          <div>
-            <h4>GSAP</h4>
-            <img src="img/logo_gsap.png" alt="Logo GSAP">
-            <p>O GSAP (GreenSock Animation Platform) é uma biblioteca JavaScript para animações fluidas e de alto
-              desempenho em CSS, SVGs, Canvas e Scroll.</p>
+            <div>
+              <h4>BootStrap</h4>
+              <img src="img/logo_bootstrap.png" alt="Logo BootStrap" />
+              <p>
+                Bootstrap é um framework front-end que facilita o
+                desenvolvimento de páginas web responsivas e estilizadas,
+                utilizando HTML, CSS e JavaScript.
+              </p>
+            </div>
+
+            <div>
+              <h4>GSAP</h4>
+              <img src="img/logo_gsap.png" alt="Logo GSAP" />
+              <p>
+                O GSAP (GreenSock Animation Platform) é uma biblioteca
+                JavaScript para animações fluidas e de alto desempenho em CSS,
+                SVGs, Canvas e Scroll.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="sobre">
-      <div class="sobreCont missao">
+      <div class="wrapp">
+        <section class="work">
+          <div class="work__left">
+            <div class="work__text">
+              <div class="work__info missao">
+                <div class="work__left-bl">
+                  <h3 class="title">Dev<span class="stroke">Cycle</span></h3>
+                  <h2 class="titleTwo">
+                    A DevCycle cria soluções digitais inovadoras com foco em
+                    tecnologia e desempenho.
+                  </h2>
+                  <div class="titleCont">
+                    <div class="icons iconOne">
+                      <img src="img/missao_icon.png" alt="Ícone de Missão" />
+                      <h4>Missão</h4>
+                    </div>
+                    <div class="icons iconTwo">
+                      <img src="img/visao_icon.png" alt="Ícone de Visão" />
+                      <h4>Visão</h4>
+                    </div>
+                    <div class="icons iconThree">
+                      <img src="img/valores_icon.png" alt="Ícone de Valores" />
+                      <h4>Valores</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="work__info visao">
+                <div class="work__left-bl">
+                  <h3 class="title">Dev<span class="stroke">Cycle</span></h3>
+                  <h2 class="titleTwo">
+                    A DevCycle cria soluções digitais inovadoras com foco em
+                    tecnologia e desempenho.
+                  </h2>
+                  <div class="titleCont">
+                    <div class="icons iconOne">
+                      <img src="img/missao_icon.png" alt="Ícone de Missão" />
+                      <h4>Missão</h4>
+                    </div>
+                    <div class="icons iconTwo">
+                      <img src="img/visao_icon.png" alt="Ícone de Visão" />
+                      <h4>Visão</h4>
+                    </div>
+                    <div class="icons iconThree">
+                      <img src="img/valores_icon.png" alt="Ícone de Valores" />
+                      <h4>Valores</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="work__info valores">
+                <div class="work__left-bl">
+                  <h3 class="title">Dev<span class="stroke">Cycle</span></h3>
+                  <h2 class="titleTwo">
+                    A DevCycle cria soluções digitais inovadoras com foco em
+                    tecnologia e desempenho.
+                  </h2>
+                  <div class="titleCont">
+                    <div class="icons iconOne">
+                      <img src="img/missao_icon.png" alt="Ícone de Missão" />
+                      <h4>Missão</h4>
+                    </div>
+                    <div class="icons iconTwo">
+                      <img src="img/visao_icon.png" alt="Ícone de Visão" />
+                      <h4>Visão</h4>
+                    </div>
+                    <div class="icons iconThree">
+                      <img src="img/valores_icon.png" alt="Ícone de Valores" />
+                      <h4>Valores</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="work__right">
+            <div class="work__right-bl">
+              <div class="work__photo">
+                <div class="work__photo-item">
+                  <div class="sobreTitle titleMissao">
+                    <h4>Nossa <span>Missão</span></h4>
+                    <p>
+                      Fornecer soluções inovadoras e de alta qualidade em
+                      desenvolvimento de software, ajudando empresas a
+                      transformar suas ideias em realidade com eficiência,
+                      tecnologia de ponta e excelência no atendimento.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="work__photo-item">
+                  <div class="sobreTitle titleVisao">
+                    <h4>Nossa <span>Visão</span></h4>
+                    <p>
+                      Ser referência global em desenvolvimento de software,
+                      impulsionando inovação e transformação digital com
+                      soluções inteligentes, seguras e escaláveis.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="work__photo-item">
+                  <div class="sobreTitle titleValores">
+                    <h4>Nossos <span>Valores</span></h4>
+                    <p>• Inovação</p>
+                    <p>• Excelência</p>
+                    <p>• Ética</p>
+                    <p>• Crescimento Contínuo</p>
+                    <p>• Adaptabilidade</p>
+                    <p>• Liderança Tecnológica</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="nossoParceiro">
         <div class="title">
-          <h3>Dev <span>Cycle</span></h3>
-          <h2>A DevCycle cria soluções digitais inovadoras com foco em tecnologia e desempenho.</h2>
-          <div class="titleCont">
-            <div class="icons iconOne">
-              <img src="img/missao_icon.png" alt="Ícone de Missão">
-              <h4>Missão</h4>
-            </div>
-            <div class="icons iconTwo">
-              <img src="img/visao_icon.png" alt="Ícone de Visão">
-              <h4>Visão</h4>
-            </div>
-            <div class="icons iconThree">
-              <img src="img/valores_icon.png" alt="Ícone de Valores">
-              <h4>Valores</h4>
-            </div>
-          </div>
+          <h4>Sempre ao <span>seu lado</span></h4>
+          <h2>Seja nosso parceiro!</h2>
+          <p>
+            Transforme sua presença digital com soluções completas de
+            desenvolvimento.
+          </p>
         </div>
-        <div class="sobreItens">
-          <div class="light">
-            <img src="img/lights.png" alt="">
-          </div>
-          <div class="backgroundSobre">
-            <img src="img/background_sobre.png" alt="">
-          </div>
-          <div class="sobreTitle">
-            <h4>Nossa <span>Missão</span></h4>
+        <div class="parceiroCont">
+          <div class="icone">
+            <img class="iconeOne" src="img/suporte_icon.png" alt="" />
+            <h4>Suporte 24/7</h4>
             <p>
-              Fornecer soluções inovadoras e de alta qualidade em desenvolvimento de software,
-              ajudando empresas a transformar suas ideias em realidade com eficiência, tecnologia de ponta e excelência
-              no atendimento.
+              Precisa de ajuda? Resolva suas solicitações rapidamente através da
+              equipe de suporte.
+            </p>
+          </div>
+          <div class="icone">
+            <img class="iconeTwo" src="img/comunidade_icon.png" alt="" />
+            <h4>Comunidade</h4>
+            <p>
+              Participe das comunidades da DevCycle nas redes sociais e fique
+              por dentro das novidades!
+            </p>
+          </div>
+          <div class="icone">
+            <img class="iconeThree" src="img/seguranca_icon.png" alt="" />
+            <h4>Segurança</h4>
+            <p>
+              Proteja-se! mantenha-se informado sobre as melhores práticas de
+              segurança digital.
             </p>
           </div>
         </div>
-      </div>
-      <div class="sobreCont visao">
-        <div class="title">
-          <h3>Dev <span>Cycle</span></h3>
-          <h2>A DevCycle cria soluções digitais inovadoras com foco em tecnologia e desempenho.</h2>
-          <div class="titleCont">
-            <div class="icons iconOne">
-              <img src="img/missao_icon.png" alt="Ícone de Missão">
-              <h4>Missão</h4>
-            </div>
-            <div class="icons iconTwo">
-              <img src="img/visao_icon.png" alt="Ícone de Visão">
-              <h4>Visão</h4>
-            </div>
-            <div class="icons iconThree">
-              <img src="img/valores_icon.png" alt="Ícone de Valores">
-              <h4>Valores</h4>
-            </div>
-          </div>
-        </div>
-        <div class="sobreItens">
-          <div class="light">
-            <img src="img/lights.png" alt="">
-          </div>
-          <div class="backgroundSobre">
-            <img src="img/background_sobre.png" alt="">
-          </div>
-          <div class="sobreTitle">
-            <h4>Nossa <span>Visão</span></h4>
-            <p>Ser referência global em desenvolvimento de software, impulsionando inovação e transformação digital com
-              soluções inteligentes, seguras e escaláveis.</p>
-          </div>
-        </div>
-      </div>
-      <div class="sobreCont valores">
-        <div class="title">
-          <h3>Dev <span>Cycle</span></h3>
-          <h2>A DevCycle cria soluções digitais inovadoras com foco em tecnologia e desempenho.</h2>
-          <div class="titleCont">
-            <div class="icons iconOne">
-              <img src="img/missao_icon.png" alt="Ícone de Missão">
-              <h4>Missão</h4>
-            </div>
-            <div class="icons iconTwo">
-              <img src="img/visao_icon.png" alt="Ícone de Visão">
-              <h4>Visão</h4>
-            </div>
-            <div class="icons iconThree">
-              <img src="img/valores_icon.png" alt="Ícone de Valores">
-              <h4>Valores</h4>
-            </div>
-          </div>
-        </div>
-        <div class="sobreItens">
-          <div class="light">
-            <img src="img/lights.png" alt="">
-          </div>
-          <div class="backgroundSobre">
-            <img src="img/background_sobre.png" alt="">
-          </div>
-          <div class="sobreTitle">
-            <h4>Nossos <span>Valores</span></h4>
-            <p>• Inovação</p>
-            <p>• Excelência</p>
-            <p>• Ética</p>
-            <p>• Crescimento Contínuo</p>
-            <p>• Adaptabilidade</p>
-            <p>• Liderança Tecnológica</p>
-          </div>
-        </div>
-      </div>
+      </section>
 
-
-    </section>
-
-    <section id="nossoParceiro">
-      <div class="title">
-        <h4>Sempre ao <span>seu lado</span></h4>
-        <h2>Seja nosso parceiro!</h2>
-        <p>Transforme sua presença digital com soluções completas de desenvolvimento.</p>
-      </div>
-      <div class="parceiroCont">
-        <div class="icone">
-          <img class="iconeOne" src="img/suporte_icon.png" alt="">
-          <h4>Suporte 24/7</h4>
-          <p>Precisa de ajuda? Resolva suas solicitações rapidamente através da equipe de suporte.</p>
-        </div>
-        <div class="icone">
-          <img class="iconeTwo" src="img/comunidade_icon.png" alt="">
-          <h4>Comunidade</h4>
-          <p>Participe das comunidades da DevCycle nas redes sociais e fique por dentro das novidades! </p>
-        </div>
-        <div class="icone">
-          <img class="iconeThree" src="img/seguranca_icon.png" alt="">
-          <h4>Segurança</h4>
-          <p>Proteja-se! mantenha-se informado sobre as melhores práticas de segurança digital.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="servicos">
-      <div class="servicosContainer">
-        <div class="servicoOne">
-          <div class="servicoCont">
-            <div class="title">
-              <h4>Dev<span>Cycle</span></h4>
-              <h3>Oferecemos diversos serviços para impulsionar seu negócio!</h3>
-              <p>Oferecemos serviços de desenvolvimento de sites, aplicativos móveis, automação de processos e
-                marketing,
-                proporcionando soluções inovadoras e suporte contínuo para seu negócio.</p>
-            </div>
-            <div class="titleItens sites">
-              <img src="img/desenvolvimento_de_sites_icon.png" alt="">
-              <h4>Desenvolvimento de sites</h4>
-            </div>
-            <hr>
-            <div class="titleItens design">
-              <img src="img/design_icon.png" alt="">
-              <h4>Design de UX/UI</h4>
-            </div>
-            <hr>
-            <div class="titleItens mobile">
-              <img src="img/mobile_icon.png" alt="">
-              <h4>Criação de aplicativos</h4>
-            </div>
-          </div>
-          <div class="servicoItens">
-            <div class="servicoTitles manutencao">
-              <h4>Manutenção</h4>
-              <p>Suporte Técnico</p>
-              <div>
-                <img src="img/star_icon.png" alt="">
-                <img src="img/star_icon.png" alt="">
-                <img src="img/star_icon.png" alt="">
-                <img src="img/star_icon.png" alt="">
-                <img src="img/star_icon.png" alt="">
+      <section id="servicos">
+        <div class="servicosContainer">
+          <div class="servicoOne">
+            <div class="servicoCont">
+              <div class="title">
+                <h4>Dev<span>Cycle</span></h4>
+                <h3>
+                  Oferecemos diversos serviços para impulsionar seu negócio!
+                </h3>
+                <p>
+                  Oferecemos serviços de desenvolvimento de sites, aplicativos
+                  móveis, automação de processos e marketing, proporcionando
+                  soluções inovadoras e suporte contínuo para seu negócio.
+                </p>
+              </div>
+              <div class="titleItens sites">
+                <img src="img/desenvolvimento_de_sites_icon.png" alt="" />
+                <h4>Desenvolvimento de sites</h4>
+              </div>
+              <hr />
+              <div class="titleItens design">
+                <img src="img/design_icon.png" alt="" />
+                <h4>Design de UX/UI</h4>
+              </div>
+              <hr />
+              <div class="titleItens mobile">
+                <img src="img/mobile_icon.png" alt="" />
+                <h4>Criação de aplicativos</h4>
               </div>
             </div>
-            <div class="servicoTitles seo">
-              <h4>SEO</h4>
-              <p>Marketing</p>
-              <div>
-                <img src="img/star_icon.png" alt="">
-                <img src="img/star_icon.png" alt="">
-                <img src="img/star_icon.png" alt="">
-                <img src="img/star_icon.png" alt="">
-                <img src="img/star_icon.png" alt="">
-              </div>
-            </div>
-            <div class="icons manutencaoIcon">
-              <img src="img/manutencao_icon.png" alt="">
-            </div>
-            <div class="icons marketingIcon">
-              <img src="img/marketing_icon.png" alt="">
-            </div>
-          </div>
-        </div>
-
-        <div class="servicoTwo">
-          <div class="servicoTwoCont">
-
-            <div class="servicoTwoContItens">
-              <div class="servicoTwoItens">
-                <div class="imgIcon">
-                  <img src="img/start_icon.png" alt="">
-                </div>
-                <div class="servicoTwoTitles">
-                  <h4>Start</h4>
-                  <p>Reunião inicial para entender as necessidades do cliente e definir o escopo do projeto.</p>
+            <div class="servicoItens">
+              <div class="servicoTitles manutencao">
+                <h4>Manutenção</h4>
+                <p>Suporte Técnico</p>
+                <div>
+                  <img src="img/star_icon.png" alt="" />
+                  <img src="img/star_icon.png" alt="" />
+                  <img src="img/star_icon.png" alt="" />
+                  <img src="img/star_icon.png" alt="" />
+                  <img src="img/star_icon.png" alt="" />
                 </div>
               </div>
-              <div class="servicoTwoItens">
-                <div class="imgIcon">
-                  <img src="img/design_servico_icon.png" alt="">
-                </div>
-                <div class="servicoTwoTitles">
-                  <h4>Design</h4>
-                  <p>Criação da identidade visual, wireframes e protótipos para estruturar a interface.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="servicoTwoContItens">
-              <div class="servicoTwoItens">
-                <div class="imgIcon">
-                  <img src="img/front_end_icon.png" alt="">
-                </div>
-                <div class="servicoTwoTitles">
-                  <h4>Front-End</h4>
-                  <p>Desenvolvimento da interface interativa, focando na experiência do usuário.</p>
+              <div class="servicoTitles seo">
+                <h4>SEO</h4>
+                <p>Marketing</p>
+                <div>
+                  <img src="img/star_icon.png" alt="" />
+                  <img src="img/star_icon.png" alt="" />
+                  <img src="img/star_icon.png" alt="" />
+                  <img src="img/star_icon.png" alt="" />
+                  <img src="img/star_icon.png" alt="" />
                 </div>
               </div>
-              <div class="servicoTwoItens">
-                <div class="imgIcon">
-                  <img src="img/back_end_icon.png" alt="">
-                </div>
-                <div class="servicoTwoTitles">
-                  <h4>Back-End</h4>
-                  <p>Desenvolvimento da lógica do sistema, banco de dados e funcionalidades "por trás das cortinas".</p>
-                </div>
+              <div class="icons manutencaoIcon">
+                <img src="img/manutencao_icon.png" alt="" />
+              </div>
+              <div class="icons marketingIcon">
+                <img src="img/marketing_icon.png" alt="" />
               </div>
             </div>
           </div>
 
-          <div class="servicoTwoItensTwo">
-            <div class="imgIcon">
-              <img src="img/entrega_icon.png" alt="">
+          <div class="servicoTwo">
+            <div class="servicoTwoCont">
+              <div class="servicoTwoContItens">
+                <div class="servicoTwoItens">
+                  <div class="imgIcon">
+                    <img src="img/start_icon.png" alt="" />
+                  </div>
+                  <div class="servicoTwoTitles">
+                    <h4>Start</h4>
+                    <p>
+                      Reunião inicial para entender as necessidades do cliente e
+                      definir o escopo do projeto.
+                    </p>
+                  </div>
+                </div>
+                <div class="servicoTwoItens">
+                  <div class="imgIcon">
+                    <img src="img/design_servico_icon.png" alt="" />
+                  </div>
+                  <div class="servicoTwoTitles">
+                    <h4>Design</h4>
+                    <p>
+                      Criação da identidade visual, wireframes e protótipos para
+                      estruturar a interface.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="servicoTwoContItens">
+                <div class="servicoTwoItens">
+                  <div class="imgIcon">
+                    <img src="img/front_end_icon.png" alt="" />
+                  </div>
+                  <div class="servicoTwoTitles">
+                    <h4>Front-End</h4>
+                    <p>
+                      Desenvolvimento da interface interativa, focando na
+                      experiência do usuário.
+                    </p>
+                  </div>
+                </div>
+                <div class="servicoTwoItens">
+                  <div class="imgIcon">
+                    <img src="img/back_end_icon.png" alt="" />
+                  </div>
+                  <div class="servicoTwoTitles">
+                    <h4>Back-End</h4>
+                    <p>
+                      Desenvolvimento da lógica do sistema, banco de dados e
+                      funcionalidades "por trás das cortinas".
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="servicoTwoTitles">
-              <h4>Entrega</h4>
-              <p>Implantação do projeto após testes e ajustes finais.</p>
+
+            <div class="servicoTwoItensTwo">
+              <div class="imgIcon">
+                <img src="img/entrega_icon.png" alt="" />
+              </div>
+              <div class="servicoTwoTitles">
+                <h4>Entrega</h4>
+                <p>Implantação do projeto após testes e ajustes finais.</p>
+              </div>
+            </div>
+
+            <div class="conection">
+              <hr class="horiOne" />
+              <hr class="horiTwo" />
+              <hr class="vertOne" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portifolio">
+          <div class="port-card">
+            <h2>Confira nosso <br /><span>Portifólio</span></h2>
+            <h4>
+              Descubra nosso portifólio com projetos personalizados. Criamos
+              experiências digitais de alta qualidade, desenvolvidas com
+              tecnologia de ponta para atender às necessidades dos nossos
+              clientes.
+            </h4>
+          </div>
+
+          <div class="card-port">
+            <div class="card-progranac">
+              <!-- From Uiverse.io by vinodjangid07 -->
+              <button class="button">
+                <svg class="svgIcon" viewBox="0 0 384 512">
+                  <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="card-senacria">
+              <button class="button">
+                <svg class="svgIcon" viewBox="0 0 384 512">
+                  <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="card-solarprog">
+              <button class="button">
+                <svg class="svgIcon" viewBox="0 0 384 512">
+                  <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                  ></path>
+                </svg>
+              </button>
             </div>
           </div>
 
-          <div class="conection">
-            <hr class="horiOne">
-            <hr class="horiTwo">
-            <hr class="vertOne">
+          <div class="button">
+            <button class="cta">
+              <span>Ver Mais</span>
+              <svg width="15px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
+          </div>
+      </section>
+
+      <section id="solucoes">
+        <div class="solucoesCont">
+          <div>
+            <h3>Soluções sob medida para seu sucesso digital</h3>
+            <p>
+              A DevCycle oferece soluções sob medida para o seu sucesso digital,
+              criando projetos personalizados com tecnologia de ponta para
+              impulsionar o crescimento do seu negócio.
+            </p>
+          </div>
+          <div>
+            <button class="cta">
+              <span>Ver Mais</span>
+              <svg width="15px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="portifolio">
-      <div class="port-card">
-        <article class="site">
-          <h2>Confira nossso <br><span>Portifólio</span></h2>
-          <h4>Descubra nosso portifólio com projetos personalizados. Criamos experiências digitais de alta qualidade,
-            desenvolvidas com tecnologia de ponta para atender às necessidades dos nossos clientes.</h4>
-      </div>
-
-      <div class="card-port">
-        <div class="card-progranac">
-          <!-- From Uiverse.io by vinodjangid07 -->
-          <button class="button">
-            <svg class="svgIcon" viewBox="0 0 384 512">
-              <path
-                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
-              </path>
-            </svg>
-          </button>
-
-        </div>
-
-        <div class="card-senacria">
-          <button class="button">
-            <svg class="svgIcon" viewBox="0 0 384 512">
-              <path
-                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
-              </path>
-            </svg>
-          </button>
-        </div>
-
-        <div class="card-solarprog">
-          <button class="button">
-            <svg class="svgIcon" viewBox="0 0 384 512">
-              <path
-                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
-              </path>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <div class="button">
-        <button class="cta">
-          <span>Ver Mais</span>
-          <svg width="15px" height="10px" viewBox="0 0 13 10">
-            <path d="M1,5 L11,5"></path>
-            <polyline points="8 1 12 5 8 9"></polyline>
-          </svg>
-        </button>
-      </div>
-      </article>
-    </section>
-
-    <section id="solucoes">
-      <div class="solucoesCont">
+      <section id="contato">
+        <h2>
+          Estamos Aqui Para Ajudar!<br />
+          <span>Fale Conosco</span>
+        </h2>
         <div>
-          <h3>Soluções sob medida para seu sucesso digital</h3>
-          <p>A DevCycle oferece soluções sob medida para o seu sucesso digital, criando projetos personalizados com
-            tecnologia de ponta para impulsionar o crescimento do seu negócio.</p>
+          <h3>Perguntas Frequentes</h3>
+          <p>Esclareça suas dúvidas!</p>
         </div>
+
+        <div class="pergunta">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Quais serviços de desenvolvimento vocês oferecem?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Nós oferecemos uma ampla gama de serviços de desenvolvimento,
+                  incluindo:<br />
+                  - Desenvolvimento de Sites: Institucionais, E-commerce e
+                  Landing Pages.<br />
+                  - Desenvolvimento de Aplicativos: Android, iOS e WebApps.<br />
+                  - Sistemas Web: ERP, CRM, sistemas de gestão
+                  personalizados.<br />
+                  - SEO e Otimização de Desempenho.<br />
+                  - Manutenção e Suporte Técnico.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Quanto tempo leva para desenvolver um site ou aplicativo?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  O tempo de desenvolvimento depende da complexidade do projeto
+                  e das funcionalidades desejadas:<br />
+                  - Sites Simples: 2 a 4 semanas.<br />
+                  - Aplicativos e Sistemas Mais Complexos: 2 a 6 meses.<br />
+                  - Projetos Personalizados: O prazo é definido após uma análise
+                  detalhada.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Vocês oferecem suporte após o lançamento do projeto?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Sim, oferecemos suporte contínuo após o lançamento:<br />
+                  - Correção de Bugs.<br />
+                  - Atualizações e melhorias.<br />
+                  - Manutenção Preventiva.<br />
+                  - Suporte Técnico para dúvidas e problemas.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  Posso personalizar o design do meu site ou aplicativo?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Sim! A personalização é uma das nossas prioridades:<br />
+                  - Designs personalizados para refletir a identidade da sua
+                  marca.<br />
+                  - Participação ativa do cliente durante o processo de
+                  design.<br />
+                  - Layouts responsivos para todos os dispositivos.<br />
+                  - Revisões até que você esteja 100% satisfeito.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFive"
+                >
+                  Como posso obter um orçamento para meu projeto?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Para obter um orçamento:<br />
+                  1. Entre em contato pelo nosso site, e-mail ou telefone.<br />
+                  2. Informe os detalhes do seu projeto: tipo, funcionalidades e
+                  prazo.<br />
+                  3. Receba um orçamento personalizado após a análise.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseSix"
+                >
+                  Como posso iniciar um projeto com a DevCycle?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Para iniciar um projeto conosco:<br />
+                  1. Entre em contato para uma reunião inicial.<br />
+                  2. Definimos os requisitos do seu projeto.<br />
+                  3. Criamos um plano detalhado com escopo, prazos e
+                  orçamento.<br />
+                  4. Iniciamos o desenvolvimento com atualizações frequentes.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div>
           <button class="cta">
-            <span>Ver Mais</span>
+            <span>Contato</span>
             <svg width="15px" height="10px" viewBox="0 0 13 10">
               <path d="M1,5 L11,5"></path>
               <polyline points="8 1 12 5 8 9"></polyline>
             </svg>
           </button>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contato">
-      <h2>Estamos Aqui Para Ajudar!<br>
-        <span>Fale Conosco</span>
-      </h2>
-      <div>
-        <h3>Perguntas Frequentes</h3>
-        <p>Esclareça suas dúvidas!</p>
-      </div>
+    </main>
 
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-pai">
+          <div class="footer-logo">
+            <a href="index.html">
+              <img src="./img/logo_devcycle_footer.png" alt="Logo" />
+            </a>
+            <div class="contato">
+              <h3>
+                Descubra o poder da tecnologia inovadora para transformar o seu
+                mundo
+              </h3>
 
-      <div class="pergunta">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Quais serviços de desenvolvimento vocês oferecem?
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                Nós oferecemos uma ampla gama de serviços de desenvolvimento, incluindo:<br>
-                - Desenvolvimento de Sites: Institucionais, E-commerce e Landing Pages.<br>
-                - Desenvolvimento de Aplicativos: Android, iOS e WebApps.<br>
-                - Sistemas Web: ERP, CRM, sistemas de gestão personalizados.<br>
-                - SEO e Otimização de Desempenho.<br>
-                - Manutenção e Suporte Técnico.
-              </div>
-            </div>
-          </div>
+              <!-- From Uiverse.io by elisapi -->
+              <div class="card">
+                <a class="socialContainer containerOne" href="#">
+                  <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                    ></path>
+                  </svg>
+                </a>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Quanto tempo leva para desenvolver um site ou aplicativo?
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                O tempo de desenvolvimento depende da complexidade do projeto e das funcionalidades desejadas:<br>
-                - Sites Simples: 2 a 4 semanas.<br>
-                - Aplicativos e Sistemas Mais Complexos: 2 a 6 meses.<br>
-                - Projetos Personalizados: O prazo é definido após uma análise detalhada.
-              </div>
-            </div>
-          </div>
+                <a class="socialContainer containerTwo" href="#">
+                  <svg viewBox="0 0 16 16" class="socialSvg twitterSvg">
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                    ></path>
+                  </svg>
+                </a>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                Vocês oferecem suporte após o lançamento do projeto?
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                Sim, oferecemos suporte contínuo após o lançamento:<br>
-                - Correção de Bugs.<br>
-                - Atualizações e melhorias.<br>
-                - Manutenção Preventiva.<br>
-                - Suporte Técnico para dúvidas e problemas.
-              </div>
-            </div>
-          </div>
+                <a class="socialContainer containerThree" href="#">
+                  <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
+                    <path
+                      d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                    ></path>
+                  </svg>
+                </a>
 
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                Posso personalizar o design do meu site ou aplicativo?
-              </button>
-            </h2>
-            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                Sim! A personalização é uma das nossas prioridades:<br>
-                - Designs personalizados para refletir a identidade da sua marca.<br>
-                - Participação ativa do cliente durante o processo de design.<br>
-                - Layouts responsivos para todos os dispositivos.<br>
-                - Revisões até que você esteja 100% satisfeito.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                Como posso obter um orçamento para meu projeto?
-              </button>
-            </h2>
-            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                Para obter um orçamento:<br>
-                1. Entre em contato pelo nosso site, e-mail ou telefone.<br>
-                2. Informe os detalhes do seu projeto: tipo, funcionalidades e prazo.<br>
-                3. Receba um orçamento personalizado após a análise.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                Como posso iniciar um projeto com a DevCycle?
-              </button>
-            </h2>
-            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                Para iniciar um projeto conosco:<br>
-                1. Entre em contato para uma reunião inicial.<br>
-                2. Definimos os requisitos do seu projeto.<br>
-                3. Criamos um plano detalhado com escopo, prazos e orçamento.<br>
-                4. Iniciamos o desenvolvimento com atualizações frequentes.
+                <a class="socialContainer containerFour" href="#">
+                  <svg viewBox="0 0 16 16" class="socialSvg whatsappSvg">
+                    <path
+                      d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                    ></path>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-
-      <div>
-        <button class="cta">
-          <span>Contato</span>
-          <svg width="15px" height="10px" viewBox="0 0 13 10">
-            <path d="M1,5 L11,5"></path>
-            <polyline points="8 1 12 5 8 9"></polyline>
-          </svg>
-        </button>
-    </section>
-
-
-  </main>
-
-
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-pai">
-        <div class="footer-logo">
-          <a href="index.html">
-            <img src="./img/logo_devcycle_footer.png" alt="Logo">
-          </a>
-          <div class="contato">
-            <h3>Descubra o poder da tecnologia inovadora para transformar o seu mundo</h3>
-
-            <!-- From Uiverse.io by elisapi -->
-            <div class="card">
-              <a class="socialContainer containerOne" href="#">
-                <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
-                  <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
-                  </path>
-                </svg>
-              </a>
-
-              <a class="socialContainer containerTwo" href="#">
-                <svg viewBox="0 0 16 16" class="socialSvg twitterSvg">
-                  <path
-                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
-                  </path>
-                </svg>
-              </a>
-
-              <a class="socialContainer containerThree" href="#">
-                <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
-                  <path
-                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                  </path>
-                </svg>
-              </a>
-
-              <a class="socialContainer containerFour" href="#">
-                <svg viewBox="0 0 16 16" class="socialSvg whatsappSvg">
-                  <path
-                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
-                  </path>
-                </svg>
-              </a>
-            </div>
-
-
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Menu</h4>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+          </div>
+          <div class="footer-section">
+            <h4>Menu</h4>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+          </div>
+          <div class="footer-section">
+            <h4>Menu</h4>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
           </div>
         </div>
       </div>
-      <div class="footer-links">
-        <div class="footer-section">
-          <h4>Section</h4>
-          <a href="#home">Home</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#servicos">Serviços</a>
-          <a href="#contato">Contato</a>
-        </div>
-      </div>
-    </div>
 
-    <div class="footer-final"></div>
+      <div class="footer-final"></div>
 
-    <p class="paragrafo">&copy; 2025 DevCycle</p>
-  </footer>
+      <p class="paragrafo">&copy; 2025 DevCycle</p>
+    </footer>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
 
-  <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
-  <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="script/script.js" defer></script>
-
-</body>
-
+    <script src="script/script.js" defer></script>
+  </body>
 </html>
