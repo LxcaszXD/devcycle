@@ -1347,6 +1347,107 @@ html {
   .cta:active {
     transform: scale(0.95);
   }
+
+  .card-modal {
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+    display: flex;
+    background-image: url(../img/progranac.png);
+    background-size: cover;
+    flex-direction: column;
+    /* Alinha os elementos na vertical */
+    align-items: center;
+    justify-content: center;
+    /* Faz a imagem ocupar toda a largura */
+    /* Garante que a imagem vá até o topo */
+    background-color: #f0f0f0;
+    /* Apenas para referência visual */
+    overflow: hidden;
+    /* Evita qualquer transbordamento */
+    cursor: pointer;
+    transition: background-position 3s ease-in-out;
+
+    img {
+      width: 100%;
+      height: 100%;
+      /* Agora a imagem ocupa toda a altura do card */
+      object-fit: cover;
+      /* Garante que a imagem cubra todo o espaço */
+      border-radius: 20px 20px 0 0;
+      /* Arredondamento apenas no topo */
+    }
+
+    /* From Uiverse.io by vinodjangid07 */
+    .button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $colorTertiary;
+      border: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 0px 0px 4px rgba(87, 154, 242, 0.253);
+      cursor: pointer;
+      transition-duration: 0.3s;
+      overflow: hidden;
+      position: relative;
+      top: 250px;
+
+      .svgIcon {
+        width: 12px;
+        transition-duration: 0.3s;
+
+        path {
+          fill: white;
+        }
+      }
+
+      &:hover {
+        width: 140px;
+        border-radius: 50px;
+        background-color: $colorBack;
+        align-items: center;
+        transition-duration: 0.3s;
+
+        .svgIcon {
+          transition-duration: 0.3s;
+          transform: translateY(-200%);
+        }
+      }
+
+      &::before {
+        position: absolute;
+        bottom: -20px;
+        content: "VER MAIS";
+        color: white;
+        font-size: 0px;
+      }
+
+      &:hover::before {
+        font-size: 13px;
+        opacity: 1;
+        bottom: unset;
+        transition-duration: 0.3s;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 2em;
+      margin: 0px;
+    }
+  }
+
+  .card-progranac:hover {
+    background-position: 0% 100%;
+  }
 }
 
 //#endregion
@@ -1523,66 +1624,69 @@ html {
     }
   }
 
-  /* From Uiverse.io by alexmaracinaru */
-  .cta {
-    position: relative;
-    margin: auto;
-    padding: 12px 18px;
-    transition: all 0.2s ease;
-    border: none;
-    background: none;
-    cursor: pointer;
-    margin-top: 50px;
-    @include flex-center();
+  .buttonCont {
+    /* From Uiverse.io by alexmaracinaru */
+    .buttonContato {
+      position: relative;
+      margin: auto;
+      padding: 12px 18px;
+      transition: all 0.2s ease;
+      border: none;
+      background: none;
+      cursor: pointer;
+      margin-top: 60px;
+      @include flex-center();
+    }
+  
+    .buttonContato:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      border-radius: 50px;
+      background: #579af2;
+      width: 55px;
+      height: 45px;
+      transition: all 0.3s ease;
+    }
+  
+    .buttonContato span {
+      position: relative;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+    }
+  
+    .buttonContato svg {
+      position: relative;
+      top: 0;
+      margin-left: 10px;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: #ffffff;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all 0.3s ease;
+    }
+  
+    .buttonContato:hover:before {
+      width: 100%;
+      background: #579af2;
+    }
+  
+    .buttonContato:hover svg {
+      transform: translateX(0);
+    }
+  
+    .buttonContato:active {
+      transform: scale(0.95);
+    }
   }
-
-  .cta:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 50px;
-    background: #579af2;
-    width: 55px;
-    height: 45px;
-    transition: all 0.3s ease;
-  }
-
-  .cta span {
-    position: relative;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 21px;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    color: #ffffff;
-  }
-
-  .cta svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: #ffffff;
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-  }
-
-  .cta:hover:before {
-    width: 100%;
-    background: #579af2;
-  }
-
-  .cta:hover svg {
-    transform: translateX(0);
-  }
-
-  .cta:active {
-    transform: scale(0.95);
-  }
+  
 }
 
 //#endregion

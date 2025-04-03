@@ -59,6 +59,15 @@ const particles = Particles.init({
 });
 // ------------------------------ End Banner ----------------------------------- //
 
+$(document).ready(function(){
+  $('.carouselPort').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+});
+
 
 
 gsap.registerPlugin(ScrollTrigger);

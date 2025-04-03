@@ -1227,6 +1227,96 @@ html .card-solarprog:hover {
 .button .cta:active {
   transform: scale(0.95);
 }
+.button .card-modal {
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  background-image: url(../img/progranac.png);
+  background-size: cover;
+  flex-direction: column;
+  /* Alinha os elementos na vertical */
+  align-items: center;
+  justify-content: center;
+  /* Faz a imagem ocupar toda a largura */
+  /* Garante que a imagem vá até o topo */
+  background-color: #f0f0f0;
+  /* Apenas para referência visual */
+  overflow: hidden;
+  /* Evita qualquer transbordamento */
+  cursor: pointer;
+  transition: background-position 3s ease-in-out;
+  /* From Uiverse.io by vinodjangid07 */
+}
+.button .card-modal img {
+  width: 100%;
+  height: 100%;
+  /* Agora a imagem ocupa toda a altura do card */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Garante que a imagem cubra todo o espaço */
+  border-radius: 20px 20px 0 0;
+  /* Arredondamento apenas no topo */
+}
+.button .card-modal .button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #579af2;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(87, 154, 242, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  top: 250px;
+}
+.button .card-modal .button .svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+.button .card-modal .button .svgIcon path {
+  fill: white;
+}
+.button .card-modal .button:hover {
+  width: 140px;
+  border-radius: 50px;
+  background-color: #0e0f11;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+.button .card-modal .button:hover .svgIcon {
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+.button .card-modal .button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "VER MAIS";
+  color: white;
+  font-size: 0px;
+}
+.button .card-modal .button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+.button .card-modal a {
+  text-decoration: none;
+}
+.button .card-modal h3 {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0px;
+}
+.button .card-progranac:hover {
+  background-position: 0% 100%;
+}
 
 #solucoes {
   display: flex;
@@ -1327,7 +1417,6 @@ html .card-solarprog:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* From Uiverse.io by alexmaracinaru */
 }
 #contato h2 {
   font-size: 6em;
@@ -1386,7 +1475,10 @@ html .card-solarprog:hover {
   background-image: url(../img/plus_icon.png);
   /* Inverte a cor padrão da seta (de preto para branco) */
 }
-#contato .cta {
+#contato .buttonCont {
+  /* From Uiverse.io by alexmaracinaru */
+}
+#contato .buttonCont .buttonContato {
   position: relative;
   margin: auto;
   padding: 12px 18px;
@@ -1394,12 +1486,12 @@ html .card-solarprog:hover {
   border: none;
   background: none;
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#contato .cta:before {
+#contato .buttonCont .buttonContato:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1411,7 +1503,7 @@ html .card-solarprog:hover {
   height: 45px;
   transition: all 0.3s ease;
 }
-#contato .cta span {
+#contato .buttonCont .buttonContato span {
   position: relative;
   font-family: "Ubuntu", sans-serif;
   font-size: 21px;
@@ -1419,7 +1511,7 @@ html .card-solarprog:hover {
   letter-spacing: 0.05em;
   color: #ffffff;
 }
-#contato .cta svg {
+#contato .buttonCont .buttonContato svg {
   position: relative;
   top: 0;
   margin-left: 10px;
@@ -1431,14 +1523,14 @@ html .card-solarprog:hover {
   transform: translateX(-5px);
   transition: all 0.3s ease;
 }
-#contato .cta:hover:before {
+#contato .buttonCont .buttonContato:hover:before {
   width: 100%;
   background: #579af2;
 }
-#contato .cta:hover svg {
+#contato .buttonCont .buttonContato:hover svg {
   transform: translateX(0);
 }
-#contato .cta:active {
+#contato .buttonCont .buttonContato:active {
   transform: scale(0.95);
 }
 
