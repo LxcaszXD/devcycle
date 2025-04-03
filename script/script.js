@@ -1,4 +1,4 @@
-// ------------------------------ Start Banner ----------------------------------- //
+// #region banner 
 window.onload = function () {
   Particles.init({
     selector: ".background",
@@ -57,8 +57,9 @@ const particles = Particles.init({
     },
   ],
 });
-// ------------------------------ End Banner ----------------------------------- //
+//#endregion
 
+// #region carrousel parceiros
 $(document).ready(function(){
   $('.carouselPort').slick({
     slidesToShow: 1,
@@ -105,6 +106,8 @@ gsap.fromTo(
     },
   }
 );
+
+// #endregion 
 
 document.addEventListener("DOMContentLoaded", function () {
  
