@@ -307,6 +307,16 @@ html body header nav ul li:hover {
 html body header nav ul li .txt-link {
   margin-left: 30px;
 }
+@media only screen and (max-width: 480px) {
+  html body header nav .logoHeader img {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html body header nav {
+    width: 50px;
+  }
+}
 html body main #home {
   display: flex;
   align-items: center;
@@ -459,6 +469,14 @@ html body main #home .loader span:nth-child(21) {
 html body main #home .loader span:nth-child(22) {
   animation-delay: 2.2s;
 }
+@media only screen and (max-width: 480px) {
+  html body main #home .home-inner {
+    margin-right: -7%;
+  }
+  html body main #home .home-inner h1 {
+    font-size: 2.5em;
+  }
+}
 @media only screen and (max-width: 769px) {
   html body main #home {
     height: 50dvh;
@@ -526,6 +544,12 @@ html body main #carouselCont .parceiros .gradiente {
     height: 150px;
   }
 }
+@media only screen and (max-width: 480px) {
+  html body main #carouselCont .parceiros .gradiente {
+    height: 120px !important;
+    margin-top: -6%;
+  }
+}
 html body main #carouselCont .tecnologias {
   width: 100%;
   max-width: 1200px;
@@ -569,6 +593,11 @@ html body main #carouselCont .tecnologias .carouselTec div img {
 }
 html body main #carouselCont .tecnologias .carouselTec div p {
   color: white;
+}
+@media only screen and (max-width: 480px) {
+  html body main #carouselCont .tecnologias .carouselTec div {
+    width: 290px;
+  }
 }
 html body main .wrapp {
   position: relative;
@@ -756,6 +785,20 @@ html body main .titleVisao span {
 html body main .titleValores span {
   color: #7e4bd0 !important;
 }
+@media only screen and (max-width: 480px) {
+  html body main .sobre-container h2 {
+    font-size: 1.9em !important;
+  }
+  html body main .sobreTitle {
+    width: 80%;
+    margin-right: -12% !important;
+    justify-content: space-evenly;
+  }
+  html body main .sobreTitle p {
+    font-size: 1em;
+    width: 80%;
+  }
+}
 html body main #nossoParceiro {
   height: 100dvh;
   width: 100%;
@@ -835,6 +878,11 @@ html body main #nossoParceiro .parceiro-container .parceiro-card .icone:nth-chil
   margin-left: -15%;
   margin-top: -8%;
 }
+@media only screen and (max-width: 769px) {
+  html body main #nossoParceiro .parceiro-container .parceiro-card .icone {
+    margin-right: -20% !important;
+  }
+}
 @media only screen and (max-width: 1025px) {
   html body main #nossoParceiro .parceiro-container .icone:nth-child(2) {
     margin-left: -4%;
@@ -856,6 +904,20 @@ html body main #nossoParceiro .parceiro-container .parceiro-card .icone:nth-chil
   }
   html body main #nossoParceiro .parceiro-container .parceiro-card .icone :first-child {
     margin: 0%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html body main #nossoParceiro .parceiro-container .title h2 {
+    font-size: 1.5em !important;
+  }
+  html body main #nossoParceiro .parceiro-container .title p {
+    width: 70%;
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html body main #nossoParceiro {
+    height: 100dvh;
   }
 }
 html body main #servicos {
@@ -1289,6 +1351,64 @@ html body main #servicos-responsive {
     font-weight: bold;
   }
 }
+@media only screen and (max-width: 480px) {
+  html body main .servicoCont {
+    width: 80% !important;
+  }
+  html body main .servicoCont h4 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 1%;
+  }
+  html body main .servicoCont h4 span {
+    color: #579af2;
+  }
+  html body main .servicoCont h3 {
+    width: 280px !important;
+    font-size: 1em !important;
+  }
+  html body main .servicoCont p {
+    color: rgba(255, 255, 255, 0.6);
+    width: 280px !important;
+    font-size: 0.7em !important;
+  }
+  html body main .servicoCont .titleItens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start !important;
+  }
+  html body main .servicoCont .titleItens h4 {
+    width: 200px;
+    font-size: 1.1em;
+    margin-bottom: -2%;
+  }
+  html body main .servico-cards {
+    width: 90%;
+    height: 50%;
+  }
+  html body main .servico-cards .servicoTwoItens {
+    width: 120% !important;
+    height: 40% !important;
+  }
+  html body main .servico-cards .servicoTwoItens .imgIcon {
+    background: #579af2;
+    padding: 3.5%;
+    border-radius: 50%;
+    margin-right: 5%;
+  }
+  html body main .servico-cards .servicoTwoItens .imgIcon img {
+    width: 40px !important;
+    height: auto;
+  }
+  html body main .servico-cards .servicoTwoItens h4 {
+    font-weight: bold;
+  }
+  html body main .servico-cards .servicoTwoItens p {
+    width: 200px !important;
+    font-size: 0.7em;
+  }
+}
 html body main #portifolio {
   height: 100dvh;
   width: 100%;
@@ -1339,7 +1459,6 @@ html body main #portifolio .card-port {
   z-index: 2222;
   justify-content: center;
   gap: 3.5%;
-  /* Espaçamento entre os cards */
 }
 html body main #portifolio .card-port .card-progranac {
   width: 30%;
@@ -1514,7 +1633,43 @@ html body main #portifolio .card-senacria h3 {
   font-size: 2em;
   margin: 0px;
 }
-html body main .card-solarprog {
+@media only screen and (max-width: 769px) {
+  html body main #portifolio .port-card h2 {
+    font-size: 4em;
+  }
+  html body main #portifolio .port-card h4 {
+    font-size: 1em;
+    width: 80%;
+  }
+  html body main #portifolio .card-port {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+  }
+  html body main #portifolio .card-port .card-progranac,
+  html body main #portifolio .card-port .card-senacria,
+  html body main #portifolio .card-port .card-solarprog {
+    width: 60%;
+    height: 40%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html body main #portifolio .port-card h2 {
+    font-size: 2em;
+  }
+  html body main #portifolio .port-card h4 {
+    display: none;
+  }
+  html body main #portifolio .card-port .card-progranac,
+  html body main #portifolio .card-port .card-senacria,
+  html body main #portifolio .card-port .card-solarprog {
+    width: 90%;
+    height: 40%;
+    margin-right: -20%;
+  }
+}
+html body main #portifolio .card-solarprog {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1529,14 +1684,14 @@ html body main .card-solarprog {
   cursor: pointer;
   transition: background-position 3s ease-in-out;
 }
-html body main .card-solarprog img {
+html body main #portifolio .card-solarprog img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-html body main .card-solarprog .button {
+html body main #portifolio .card-solarprog .button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -1553,53 +1708,58 @@ html body main .card-solarprog .button {
   position: relative;
   top: 250px;
 }
-html body main .card-solarprog .button .svgIcon {
+html body main #portifolio .card-solarprog .button .svgIcon {
   width: 12px;
   transition-duration: 0.3s;
 }
-html body main .card-solarprog .button .svgIcon path {
+html body main #portifolio .card-solarprog .button .svgIcon path {
   fill: white;
 }
-html body main .card-solarprog .button:hover {
+html body main #portifolio .card-solarprog .button:hover {
   width: 140px;
   border-radius: 50px;
   background-color: #0e0f11;
   align-items: center;
   transition-duration: 0.3s;
 }
-html body main .card-solarprog .button:hover .svgIcon {
+html body main #portifolio .card-solarprog .button:hover .svgIcon {
   transition-duration: 0.3s;
   transform: translateY(-200%);
 }
-html body main .card-solarprog .button::before {
+html body main #portifolio .card-solarprog .button::before {
   position: absolute;
   bottom: -20px;
   content: "VER MAIS";
   color: white;
   font-size: 0px;
 }
-html body main .card-solarprog .button:hover::before {
+html body main #portifolio .card-solarprog .button:hover::before {
   font-size: 13px;
   opacity: 1;
   bottom: unset;
   transition-duration: 0.3s;
 }
-html body main .card-solarprog a {
+html body main #portifolio .card-solarprog a {
   text-decoration: none;
 }
-html body main .card-solarprog h3 {
+html body main #portifolio .card-solarprog h3 {
   font-weight: bold;
   font-size: 2em;
   margin: 0px;
 }
-html body main .card-progranac:hover {
+html body main #portifolio .card-progranac:hover {
   background-position: 0% 100%;
 }
-html body main .card-senacria:hover {
+html body main #portifolio .card-senacria:hover {
   background-position: 0% 100%;
 }
-html body main .card-solarprog:hover {
+html body main #portifolio .card-solarprog:hover {
   background-position: 0% 100%;
+}
+@media only screen and (max-width: 769px) {
+  html body main #portifolio {
+    height: 160dvh;
+  }
 }
 html body main #solucoes {
   width: 100%;
@@ -1716,6 +1876,19 @@ html body main #solucoes .solucoesCont div .cta:active {
   }
   html body main #solucoes .solucoesCont div p {
     width: 80%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html body main #solucoes .solucoesCont {
+    flex-direction: column;
+    width: 80%;
+    margin-right: -13%;
+  }
+  html body main #solucoes .solucoesCont div h3 {
+    font-size: 1.8em;
+  }
+  html body main #solucoes .solucoesCont div p {
+    width: 100%;
   }
 }
 html body main #contato {
@@ -1853,6 +2026,36 @@ html body main #contato .buttonCont .buttonContato:hover svg {
 }
 html body main #contato .buttonCont .buttonContato:active {
   transform: scale(0.95);
+}
+@media only screen and (max-width: 769px) {
+  html body main #contato h2 {
+    font-size: 3em;
+  }
+  html body main #contato .pergunta {
+    width: 80%;
+    margin-right: -8% !important;
+  }
+  html body main #contato .accordion-button {
+    font-size: 0.4em !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html body main #contato h2 {
+    font-size: 2em;
+    margin-right: -8%;
+    width: 70%;
+  }
+  html body main #contato h3 {
+    font-size: 1.5em;
+    margin-right: -8%;
+  }
+  html body main #contato .pergunta {
+    width: 70%;
+    margin-right: -8% !important;
+  }
+  html body main #contato .accordion-button {
+    font-size: 0.4em !important;
+  }
 }
 html body footer {
   margin-top: 100px;
@@ -1996,4 +2199,11 @@ html body footer .paragrafo {
   color: rgb(150, 150, 150);
   font-size: 20px;
   margin: 0.5% !important;
+}
+@media only screen and (max-width: 768px) {
+  html body footer .footer-container {
+    width: 70%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=style.css.map */

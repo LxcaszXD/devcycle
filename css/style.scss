@@ -368,9 +368,6 @@ html {
         }
 
 
-
-
-
         ul {
           height: 100%;
           list-style-type: none;
@@ -412,7 +409,32 @@ html {
 
         }
 
+        @media only screen and (max-width: 480px) {
+          .logoHeader {
+            img {
+              width: 150px;
+            }
+          }
 
+
+
+
+
+        }
+
+
+
+      }
+
+
+
+      @media only screen and (max-width: 480px) {
+        nav {
+          width: 50px;
+
+
+
+        }
 
       }
 
@@ -521,6 +543,26 @@ html {
             }
           }
         }
+
+
+
+        @media only screen and (max-width: 480px) {
+          .home-inner {
+            margin-right: -7%;
+
+
+            h1 {
+              font-size: 2.5em;
+            }
+          }
+
+
+
+
+
+        }
+
+
       }
 
       @media only screen and (max-width: 769px) {
@@ -603,6 +645,20 @@ html {
           }
 
 
+          @media only screen and (max-width: 480px) {
+            .gradiente {
+
+              height: 120px !important;
+              margin-top: -6%
+            }
+
+
+
+
+
+          }
+
+
         }
 
         .tecnologias {
@@ -646,6 +702,20 @@ html {
                 color: $colorPrimary;
               }
             }
+
+
+            @media only screen and (max-width: 480px) {
+              div {
+                width: 290px;
+              }
+
+
+
+
+            }
+
+
+
           }
         }
       }
@@ -885,7 +955,32 @@ html {
         color: $colorSenary !important;
       }
 
-      @media only screen and (max-width: 769px) {}
+
+
+      @media only screen and (max-width: 480px) {
+
+        .sobre-container {
+          h2 {
+            font-size: 1.9em !important;
+          }
+        }
+
+
+        .sobreTitle {
+          width: 80%;
+          margin-right: -12% !important;
+          justify-content: space-evenly;
+
+          p {
+            font-size: 1em;
+            width: 80%;
+          }
+        }
+
+
+
+      }
+
 
 
       //#endregion
@@ -972,6 +1067,19 @@ html {
             }
 
 
+            @media only screen and (max-width: 769px) {
+
+
+              .icone {
+                margin-right: -20% !important;
+              }
+
+
+            }
+
+
+
+
 
           }
 
@@ -1017,12 +1125,50 @@ html {
           }
 
 
+
+          @media only screen and (max-width: 480px) {
+
+
+
+            .title {
+
+
+
+              h2 {
+                font-size: 1.5em !important;
+
+              }
+
+              p {
+                width: 70%;
+                font-size: 0.8em;
+              }
+
+            }
+
+
+
+          }
+
+
         }
 
 
 
-        @media only screen and (max-width: 1025px) {}
+
       }
+
+
+      @media only screen and (max-width: 480px) {
+
+        #nossoParceiro {
+          height: 100dvh;
+        }
+
+
+
+      }
+
 
       //#endregion
 
@@ -1329,9 +1475,6 @@ html {
         #servicos {
           display: none;
 
-
-
-
         }
 
         #servicos-responsive {
@@ -1525,6 +1668,93 @@ html {
 
       }
 
+
+
+      @media only screen and (max-width: 480px) {
+
+        .servicoCont {
+          width: 80% !important;
+
+
+          h4 {
+            font-family: $font;
+            font-weight: bold;
+            margin-bottom: 1%;
+
+            span {
+              color: $colorTertiary;
+            }
+          }
+
+          h3 {
+            width: 280px !important;
+            font-size: 1em !important;
+
+          }
+
+          p {
+            color: rgb(255, 255, 255, 0.6);
+            width: 280px !important;
+            font-size: 0.7em !important;
+          }
+
+          .titleItens {
+            @include flex-center();
+            align-items: flex-start !important;
+
+            h4 {
+
+              width: 200px;
+              font-size: 1.1em;
+              margin-bottom: -2%;
+            }
+
+
+          }
+
+
+
+
+
+
+        }
+
+
+        .servico-cards {
+          width: 90%;
+          height: 50%;
+
+          .servicoTwoItens {
+            width: 120% !important;
+            height: 40% !important;
+
+            .imgIcon {
+              background: $colorTertiary;
+              padding: 3.5%;
+              border-radius: 50%;
+              margin-right: 5%;
+
+              img {
+                width: 40px !important;
+                height: auto;
+              }
+            }
+
+            h4 {
+              font-weight: bold;
+            }
+
+            p {
+              width: 200px !important;
+              font-size: 0.7em
+            }
+          }
+        }
+
+
+
+      }
+
       // #endregion
 
 
@@ -1541,7 +1771,7 @@ html {
         }
 
         .port-card {
-         @include flex-center();
+          @include flex-center();
           flex-direction: column;
           width: 100%;
           height: auto;
@@ -1577,7 +1807,7 @@ html {
           z-index: 2222;
           justify-content: center;
           gap: 3.5%;
-          /* Espaçamento entre os cards */
+
 
           .card-progranac {
             width: 30%;
@@ -1772,109 +2002,183 @@ html {
             margin: 0px;
           }
         }
-      }
 
-       
-      .card-solarprog {
-        @include flex-center();
-        width: 30%;
-        height: 600px;
-        border-radius: 20px;
-        background-image: url('../img/senacria.png');
-        background-size: cover;
-        flex-direction: column;
-        background-color: #f0f0f0;
-        overflow: hidden;
-        cursor: pointer;
-        transition: background-position 3s ease-in-out;
 
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 20px 20px 0 0;
-        }
+        @media only screen and (max-width: 769px) {
+          .port-card {
+            h2 {
+              font-size: 4em;
+            }
 
-        .button {
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-          background-color: $colorTertiary;
-          border: none;
-          font-weight: 600;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 0px 0px 0px 4px rgba(87, 154, 242, 0.253);
-          cursor: pointer;
-          transition-duration: 0.3s;
-          overflow: hidden;
-          position: relative;
-          top: 250px;
-
-          .svgIcon {
-            width: 12px;
-            transition-duration: 0.3s;
-
-            path {
-              fill: white;
+            h4 {
+              font-size: 1em;
+              width: 80%;
             }
           }
 
-          &:hover {
-            width: 140px;
-            border-radius: 50px;
-            background-color: $colorBack;
+          .card-port {
+            flex-direction: column;
             align-items: center;
+            justify-content: space-evenly;
+            height: 70%;
+
+
+            .card-progranac,
+            .card-senacria,
+            .card-solarprog {
+              width: 60%;
+              height: 40%;
+            }
+
+          }
+
+        }
+
+
+        @media only screen and (max-width: 480px) {
+          .port-card {
+            h2 {
+              font-size: 2em;
+            }
+
+            h4 {
+           display: none;
+            }
+          }
+
+          .card-port {
+         
+            
+
+
+            .card-progranac,
+            .card-senacria,
+            .card-solarprog {
+              width: 90%;
+              height: 40%;
+              margin-right: -20%
+            }
+
+          }
+
+        }
+
+
+
+        .card-solarprog {
+          @include flex-center();
+          width: 30%;
+          height: 600px;
+          border-radius: 20px;
+          background-image: url('../img/senacria.png');
+          background-size: cover;
+          flex-direction: column;
+          background-color: #f0f0f0;
+          overflow: hidden;
+          cursor: pointer;
+          transition: background-position 3s ease-in-out;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+          }
+
+          .button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $colorTertiary;
+            border: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 0px 4px rgba(87, 154, 242, 0.253);
+            cursor: pointer;
             transition-duration: 0.3s;
+            overflow: hidden;
+            position: relative;
+            top: 250px;
 
             .svgIcon {
+              width: 12px;
               transition-duration: 0.3s;
-              transform: translateY(-200%);
+
+              path {
+                fill: white;
+              }
+            }
+
+            &:hover {
+              width: 140px;
+              border-radius: 50px;
+              background-color: $colorBack;
+              align-items: center;
+              transition-duration: 0.3s;
+
+              .svgIcon {
+                transition-duration: 0.3s;
+                transform: translateY(-200%);
+              }
+            }
+
+            &::before {
+              position: absolute;
+              bottom: -20px;
+              content: "VER MAIS";
+              color: white;
+              font-size: 0px;
+            }
+
+            &:hover::before {
+              font-size: 13px;
+              opacity: 1;
+              bottom: unset;
+              transition-duration: 0.3s;
             }
           }
 
-          &::before {
-            position: absolute;
-            bottom: -20px;
-            content: "VER MAIS";
-            color: white;
-            font-size: 0px;
+          a {
+            text-decoration: none;
           }
 
-          &:hover::before {
-            font-size: 13px;
-            opacity: 1;
-            bottom: unset;
-            transition-duration: 0.3s;
+          h3 {
+            font-weight: bold;
+            font-size: 2em;
+            margin: 0px;
           }
         }
 
-        a {
-          text-decoration: none;
+        .card-progranac:hover {
+          background-position: 0% 100%;
         }
 
-        h3 {
-          font-weight: bold;
-          font-size: 2em;
-          margin: 0px;
+        .card-senacria:hover {
+          background-position: 0% 100%;
         }
+
+        .card-solarprog:hover {
+          background-position: 0% 100%;
+        }
+
+
+
+
       }
 
-      .card-progranac:hover {
-        background-position: 0% 100%;
+      @media only screen and (max-width: 769px) {
+        #portifolio {
+          height: 160dvh;
+        }
+
       }
 
-      .card-senacria:hover {
-        background-position: 0% 100%;
-      }
 
-      .card-solarprog:hover {
-        background-position: 0% 100%;
-      }
+
 
       //#endregion
-
 
 
       //#region soluções
@@ -2005,9 +2309,32 @@ html {
           }
         }
 
+        @media only screen and (max-width: 480px) {
+          .solucoesCont {
+            flex-direction: column;
+            width: 80%;
+            margin-right: -13%;
+
+            div {
+            
+
+              h3 {
+                font-size: 1.8em;
+
+              }
+
+              p {
+                width: 100%;
+              }
+            }
+          }
+        }
+
+
       }
 
       //#endregion
+
 
       //#region Contato
       #contato {
@@ -2165,6 +2492,53 @@ html {
             transform: scale(0.95);
           }
         }
+
+
+
+
+        @media only screen and (max-width: 769px) {
+
+          h2 {
+            font-size: 3em;
+          }
+
+
+          .pergunta {
+            width: 80%;
+            margin-right: -8% !important;
+          }
+
+          .accordion-button {
+            font-size: 0.4em !important;
+          }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+
+          h2 {
+            font-size: 2em;
+            margin-right: -8%;
+            width: 70%;
+          }
+
+          h3{
+            font-size: 1.5em;
+            margin-right: -8%;
+          }
+
+          .pergunta {
+            width: 70%;
+            margin-right: -8% !important;
+          }
+
+          .accordion-button {
+            font-size: 0.4em !important;
+          }
+
+        }
+
+
 
       }
 
@@ -2330,6 +2704,19 @@ html {
         font-size: 20px;
         margin: 0.5% !important;
       }
+
+
+
+      @media only screen and (max-width: 768px) {
+
+      
+        .footer-container{
+          width: 70%;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
     }
 
   }
