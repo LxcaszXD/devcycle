@@ -459,6 +459,11 @@ html body main #home .loader span:nth-child(21) {
 html body main #home .loader span:nth-child(22) {
   animation-delay: 2.2s;
 }
+@media only screen and (max-width: 769px) {
+  html body main #home {
+    height: 50dvh;
+  }
+}
 html body main #carouselCont {
   width: 100%;
   max-width: 1200px;
@@ -502,6 +507,11 @@ html body main #carouselCont .parceiros .carousel {
     height: 70%;
   }
 }
+@media only screen and (max-width: 769px) {
+  html body main #carouselCont .parceiros .carousel img {
+    height: 50%;
+  }
+}
 html body main #carouselCont .parceiros .gradiente {
   position: absolute;
   width: 100%;
@@ -510,6 +520,11 @@ html body main #carouselCont .parceiros .gradiente {
   top: 137px;
   left: 0px;
   z-index: 99999;
+}
+@media only screen and (max-width: 769px) {
+  html body main #carouselCont .parceiros .gradiente {
+    height: 150px;
+  }
 }
 html body main #carouselCont .tecnologias {
   width: 100%;
@@ -568,6 +583,9 @@ html body main .wrapp .spacer {
   width: 100%;
   background: #ddd;
 }
+html body main #sobre-responsive {
+  display: none;
+}
 html body main .work {
   display: flex;
 }
@@ -602,6 +620,11 @@ html body main .work__left .work__text .work__info .title p {
 }
 html body main .work__left .work__text .work__info .titleTwo {
   text-transform: none;
+}
+@media only screen and (max-width: 1025px) {
+  html body main .work__left .work__text .work__info .titleTwo {
+    font-size: 2.8em;
+  }
 }
 html body main .work__left .work__text .work__info .titleCont {
   display: flex;
@@ -673,6 +696,41 @@ html body main .work__right .work__photo .work__photo-item {
   height: 100%;
   border-radius: 80px;
 }
+@media only screen and (max-width: 769px) {
+  html body main #sobre-responsive {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  html body main #sobre-responsive h2 {
+    text-align: center;
+    margin-right: -6%;
+    font-size: 2.8em;
+    width: 100%;
+  }
+  html body main #sobre-responsive h2 span {
+    color: #579af2;
+  }
+  html body main #sobre-responsive .sobre-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  html body main #sobre-responsive .sobre-container .sobreTitle {
+    margin: 2%;
+  }
+  html body main .wrapp {
+    display: none;
+  }
+}
 html body main .sobreTitle {
   width: 420px;
   height: 450px;
@@ -699,60 +757,105 @@ html body main .titleValores span {
   color: #7e4bd0 !important;
 }
 html body main #nossoParceiro {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70dvh;
+}
+html body main #nossoParceiro .parceiro-container {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+html body main #nossoParceiro .parceiro-container .title {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 30%;
+  width: 100%;
+  justify-content: space-evenly;
 }
-html body main #nossoParceiro .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-html body main #nossoParceiro .title span {
+html body main #nossoParceiro .parceiro-container .title span {
   color: #579af2;
 }
-html body main #nossoParceiro .title p {
+html body main #nossoParceiro .parceiro-container .title p {
   width: 480px;
   text-align: center;
 }
-html body main #nossoParceiro .parceiroCont {
-  background-image: url(../img/background_seja_nosso_parceiro.png);
-  width: 70%;
-  padding-bottom: 4%;
-  background-size: 102% 100%;
+html body main #nossoParceiro .parceiro-container .parceiro-card {
+  width: 100%;
+  height: 60%;
+  background-image: url(" ../img/background_seja_nosso_parceiro.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-repeat: no-repeat;
+  justify-content: space-evenly;
   gap: 10%;
 }
-html body main #nossoParceiro .parceiroCont .icone {
+html body main #nossoParceiro .parceiro-container .parceiro-card .icone {
+  width: 30%;
+  height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 2%;
+  margin-top: -6%;
 }
-html body main #nossoParceiro .parceiroCont .icone img {
+html body main #nossoParceiro .parceiro-container .parceiro-card .icone img {
   margin-bottom: 6%;
 }
-html body main #nossoParceiro .parceiroCont .icone h4 {
+html body main #nossoParceiro .parceiro-container .parceiro-card .icone h4 {
   margin-bottom: 3%;
 }
-html body main #nossoParceiro .parceiroCont .icone p {
+html body main #nossoParceiro .parceiro-container .parceiro-card .icone p {
   width: 290px;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
 }
-html body main #nossoParceiro .parceiroCont :first-child {
+html body main #nossoParceiro .parceiro-container .parceiro-card :first-child {
   margin-left: 2%;
 }
+html body main #nossoParceiro .parceiro-container .parceiro-card .icone:nth-child(1) {
+  margin-left: -1%;
+  margin-top: -8%;
+}
+html body main #nossoParceiro .parceiro-container .parceiro-card .icone:nth-child(2) {
+  margin-left: -12%;
+  margin-top: -10%;
+}
+html body main #nossoParceiro .parceiro-container .parceiro-card .icone:nth-child(3) {
+  margin-left: -15%;
+  margin-top: -8%;
+}
 @media only screen and (max-width: 1025px) {
-  html body main #nossoParceiro .parceiroCont {
-    width: 90%;
-    background-size: 100% 100%;
+  html body main #nossoParceiro .parceiro-container .icone:nth-child(2) {
+    margin-left: -4%;
+    margin-top: -12%;
+  }
+}
+@media only screen and (max-width: 769px) {
+  html body main #nossoParceiro .parceiro-container .parceiro-card {
+    height: 80%;
+    margin-top: 5%;
+    background-image: none;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+  }
+  html body main #nossoParceiro .parceiro-container .parceiro-card .icone {
+    width: 100%;
+    height: 30%;
+    margin: 0 !important;
+  }
+  html body main #nossoParceiro .parceiro-container .parceiro-card .icone :first-child {
+    margin: 0%;
   }
 }
 html body main #servicos {
@@ -765,7 +868,7 @@ html body main #servicos {
   justify-content: center;
   height: 100vh;
 }
-html body main .servicosContainer {
+html body main #servicos .servicosContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -774,117 +877,126 @@ html body main .servicosContainer {
   margin: 0 auto;
   padding: 1.5rem 0;
 }
-html body main .servicosContainer .servicoOne {
+html body main #servicos .servicosContainer .servicoOne {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10%;
-  min-width: 100vw;
+  margin-right: 50%;
+  min-width: 100%;
 }
-html body main .servicosContainer .servicoOne .servicoCont {
+html body main #servicos .servicosContainer .servicoOne .servicoCont {
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: flex-start !important;
   flex-direction: column;
 }
-html body main .servicosContainer .servicoOne .servicoCont h4 {
+html body main #servicos .servicosContainer .servicoOne .servicoCont h4 {
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
   margin-bottom: 1%;
 }
-html body main .servicosContainer .servicoOne .servicoCont h4 span {
+html body main #servicos .servicosContainer .servicoOne .servicoCont h4 span {
   color: #579af2;
 }
-html body main .servicosContainer .servicoOne .servicoCont h3 {
+html body main #servicos .servicosContainer .servicoOne .servicoCont h3 {
   width: 560px;
   font-size: 2.7em;
   margin-bottom: 2%;
 }
-html body main .servicosContainer .servicoOne .servicoCont p {
+html body main #servicos .servicosContainer .servicoOne .servicoCont p {
   color: rgba(255, 255, 255, 0.6);
   width: 550px;
   font-size: 1em;
 }
-html body main .servicosContainer .servicoOne .servicoCont .titleItens {
+html body main #servicos .servicosContainer .servicoOne .servicoCont .titleItens {
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: flex-start !important;
 }
-html body main .servicosContainer .servicoOne .servicoCont .titleItens h4 {
+html body main #servicos .servicosContainer .servicoOne .servicoCont .titleItens h4 {
   margin: 0px !important;
   width: 400px;
 }
-html body main .servicosContainer .servicoOne .servicoCont .titleItens img {
+html body main #servicos .servicosContainer .servicoOne .servicoCont .titleItens img {
   width: 30px;
   height: auto;
   margin-right: 5%;
 }
-html body main .servicosContainer .servicoOne .servicoCont .mobile img {
+html body main #servicos .servicosContainer .servicoOne .servicoCont .mobile img {
   width: auto;
   height: 30px;
   margin: 0% 6% 0% 1.5%;
 }
-html body main .servicosContainer .servicoOne .servicoCont hr {
+html body main #servicos .servicosContainer .servicoOne .servicoCont hr {
   width: 90%;
   height: 0.5px;
   background: white;
   opacity: 0.15;
 }
-html body main .servicosContainer .servicoOne .servicoItens {
+html body main #servicos .servicosContainer .servicoOne .servicoItens {
   display: flex;
   position: static;
   height: 700px;
   width: 640px;
   background-size: 640px;
   background-repeat: no-repeat;
-  background-image: url(../img/background_servicos.png);
+  background-image: url("../img/background_servicos.png");
 }
-html body main .servicosContainer .servicoOne .servicoItens .servicoTitles {
+html body main #servicos .servicosContainer .servicoOne .servicoItens .servicoTitles {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
 }
-html body main .servicosContainer .servicoOne .servicoItens .servicoTitles h4 {
+html body main #servicos .servicosContainer .servicoOne .servicoItens .servicoTitles h4 {
   font-weight: bold;
   font-size: 1, 2em;
 }
-html body main .servicosContainer .servicoOne .servicoItens .servicoTitles p {
+html body main #servicos .servicosContainer .servicoOne .servicoItens .servicoTitles p {
   font-size: 1em;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 2%;
 }
-html body main .servicosContainer .servicoOne .servicoItens .servicoTitles img {
+html body main #servicos .servicosContainer .servicoOne .servicoItens .servicoTitles img {
   width: 20px;
   height: auto;
 }
-html body main .servicosContainer .servicoOne .servicoItens .manutencao {
+html body main #servicos .servicosContainer .servicoOne .servicoItens .manutencao {
   left: 100px;
   top: -65px;
 }
-html body main .servicosContainer .servicoOne .servicoItens .seo {
+html body main #servicos .servicosContainer .servicoOne .servicoItens .seo {
   left: 160px;
   top: 40px;
 }
-html body main .servicosContainer .servicoOne .servicoItens .icons {
+html body main #servicos .servicosContainer .servicoOne .servicoItens .icons {
   position: relative;
 }
-html body main .servicosContainer .servicoOne .servicoItens .icons img {
+html body main #servicos .servicosContainer .servicoOne .servicoItens .icons img {
   width: 60px;
   height: auto;
 }
-html body main .servicosContainer .servicoOne .servicoItens .manutencaoIcon {
+html body main #servicos .servicosContainer .servicoOne .servicoItens .manutencaoIcon {
   left: 111px;
   top: 173px;
 }
-html body main .servicosContainer .servicoOne .servicoItens .marketingIcon {
+html body main #servicos .servicosContainer .servicoOne .servicoItens .marketingIcon {
   left: -83px;
   top: 463px;
 }
-html body main .servicosContainer .servicoTwo {
+@media only screen and (max-width: 1025px) {
+  html body main #servicos .servicosContainer .servicoOne .servicoCont {
+    width: 50%;
+    height: 100%;
+  }
+  html body main #servicos .servicosContainer .servicoOne .servicoItens {
+    width: 60%;
+  }
+}
+html body main #servicos .servicosContainer .servicoTwo {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -896,19 +1008,21 @@ html body main .servicosContainer .servicoTwo {
   padding-top: 10%;
   height: auto;
 }
-html body main .servicosContainer .servicoTwo .servicoTwoCont {
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
-html body main .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens {
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10%;
+  width: 100%;
 }
-html body main .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens {
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -918,25 +1032,31 @@ html body main .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContIte
   margin-bottom: 3%;
   padding: 3% 7% 3% 7%;
 }
-html body main .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens .imgIcon {
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens .imgIcon {
   background: #579af2;
   padding: 3.5%;
   border-radius: 50%;
   margin-right: 5%;
 }
-html body main .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens .imgIcon img {
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens .imgIcon img {
   width: 60px;
   height: auto;
 }
-html body main .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens h4 {
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens h4 {
   font-weight: bold;
 }
-html body main .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens p {
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens p {
   width: 400px;
   color: rgba(255, 255, 255, 0.6);
   font-weight: bold;
 }
-html body main .servicosContainer .servicoTwo .servicoTwoItensTwo {
+@media only screen and (max-width: 1025px) {
+  html body main #servicos .servicosContainer .servicoTwo .servicoTwoCont .servicoTwoContItens .servicoTwoItens {
+    padding: 2% 4%;
+    width: 80%;
+  }
+}
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -946,51 +1066,57 @@ html body main .servicosContainer .servicoTwo .servicoTwoItensTwo {
   margin-bottom: 0%;
   padding: 3% 7% 3% 7%;
 }
-html body main .servicosContainer .servicoTwo .servicoTwoItensTwo .imgIcon {
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo .imgIcon {
   background: #579af2;
   padding: 3.5%;
   border-radius: 50%;
   margin-right: 5%;
 }
-html body main .servicosContainer .servicoTwo .servicoTwoItensTwo .imgIcon img {
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo .imgIcon img {
   width: 60px;
   height: auto;
 }
-html body main .servicosContainer .servicoTwo .servicoTwoItensTwo h4 {
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo h4 {
   font-weight: bold;
 }
-html body main .servicosContainer .servicoTwo .servicoTwoItensTwo p {
+html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo p {
   width: 400px;
   color: rgba(255, 255, 255, 0.6);
   font-weight: bold;
 }
-html body main .servicosContainer .conection {
+@media only screen and (max-width: 1025px) {
+  html body main #servicos .servicosContainer .servicoTwo .servicoTwoItensTwo {
+    padding: 2% 6%;
+    width: 70%;
+  }
+}
+html body main #servicos .servicosContainer .conection {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
-html body main .servicosContainer .conection hr {
+html body main #servicos .servicosContainer .conection hr {
   background-color: #579af2 !important;
   opacity: 1 !important;
   margin: 0% !important;
   border-radius: 0px !important;
 }
-html body main .servicosContainer .conection .horiOne {
+html body main #servicos .servicosContainer .conection .horiOne {
   display: flex;
   width: 94px;
   position: relative;
   top: -460px;
   left: 197px;
 }
-html body main .servicosContainer .conection .horiTwo {
+html body main #servicos .servicosContainer .conection .horiTwo {
   display: flex;
   width: 94px;
   position: relative;
   top: -270px;
   left: 103px;
 }
-html body main .servicosContainer .conection .vertOne {
+html body main #servicos .servicosContainer .conection .vertOne {
   display: flex;
   width: 300px;
   position: relative;
@@ -998,222 +1124,174 @@ html body main .servicosContainer .conection .vertOne {
   left: -94px;
   transform: rotate(90deg);
 }
-html body main #solucoes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.5rem 0;
+html body main #servicos-responsive {
+  display: none;
 }
-html body main #solucoes .solucoesCont {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: flex-start !important;
-  background: rgba(46, 46, 46, 0.6);
-  box-shadow: 0 0 70px rgba(0, 0, 0, 0.7);
-  padding: 4%;
-  border-radius: 25px;
-}
-html body main #solucoes .solucoesCont div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: flex-start !important;
-  flex-direction: column;
-}
-html body main #solucoes .solucoesCont div h2 {
-  color: rgba(255, 255, 255, 0.7) !important;
-}
-html body main #solucoes .solucoesCont div p {
-  color: rgba(255, 255, 255, 0.6);
-  width: 700px;
-}
-html body main #solucoes .solucoesCont div {
-  margin-left: 6%;
-  /* From Uiverse.io by alexmaracinaru */
-}
-html body main #solucoes .solucoesCont div .cta {
-  position: relative;
-  margin: auto;
-  padding: 12px 18px;
-  transition: all 0.2s ease;
-  border: none;
-  background: none;
-  cursor: pointer;
-  margin-top: 50px;
-}
-html body main #solucoes .solucoesCont div .cta:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  border-radius: 50px;
-  background: #579af2;
-  width: 55px;
-  height: 45px;
-  transition: all 0.3s ease;
-}
-html body main #solucoes .solucoesCont div .cta span {
-  position: relative;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 21px;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-}
-html body main #solucoes .solucoesCont div .cta svg {
-  position: relative;
-  top: 0;
-  margin-left: 10px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: #ffffff;
-  stroke-width: 2;
-  transform: translateX(-5px);
-  transition: all 0.3s ease;
-}
-html body main #solucoes .solucoesCont div .cta:hover:before {
-  width: 100%;
-  background: #579af2;
-}
-html body main #solucoes .solucoesCont div .cta:hover svg {
-  transform: translateX(0);
-}
-html body main #solucoes .solucoesCont div .cta:active {
-  transform: scale(0.95);
-}
-html body main #contato {
-  width: 100%;
-  height: auto;
-  margin-top: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-html body main #contato h2 {
-  font-size: 6em;
-}
-html body main #contato h2 span {
-  color: #579af2;
-}
-html body main #contato h3 {
-  margin-top: 5%;
-  margin-bottom: 1%;
-}
-html body main #contato p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-html body main #contato .pergunta {
-  width: 50%;
-  background: transparent;
-  margin-top: 1%;
-  /* Deixa o fundo do acordeão transparente */
-  /* Muda a cor do texto ao passar o mouse */
-  /* Linha azul separando cada pergunta */
-  /* Estiliza o corpo do acordeão */
-  /* Remove a borda padrão do botão */
-  /* Deixa a seta branca */
-}
-html body main #contato .pergunta .accordion-button {
-  background-color: transparent !important;
-  border: none;
-  color: #fff;
-  /* Mantém o texto visível */
-  font-size: 0.2em;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 500;
-}
-html body main #contato .pergunta .accordion-collapse {
-  transition: height 0.5s;
-}
-html body main #contato .pergunta .accordion-button:hover {
-  color: #579af2;
-}
-html body main #contato .pergunta .accordion-item {
-  border: none;
-  background-color: transparent !important;
-}
-html body main #contato .pergunta .accordion-body {
-  background-color: rgba(0, 0, 0, 0);
-  /* Fundo semi-transparente */
-  color: #fff;
-}
-html body main #contato .pergunta .accordion-button:focus {
-  box-shadow: none;
-}
-html body main #contato .pergunta .accordion-button::after {
-  background-image: url(../img/plus_icon.png);
-  /* Inverte a cor padrão da seta (de preto para branco) */
-}
-html body main #contato .buttonCont {
-  /* From Uiverse.io by alexmaracinaru */
-}
-html body main #contato .buttonCont .buttonContato {
-  position: relative;
-  margin: auto;
-  padding: 12px 18px;
-  transition: all 0.2s ease;
-  border: none;
-  background: none;
-  cursor: pointer;
-  margin-top: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-html body main #contato .buttonCont .buttonContato:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  border-radius: 50px;
-  background: #579af2;
-  width: 55px;
-  height: 45px;
-  transition: all 0.3s ease;
-}
-html body main #contato .buttonCont .buttonContato span {
-  position: relative;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 21px;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-}
-html body main #contato .buttonCont .buttonContato svg {
-  position: relative;
-  top: 0;
-  margin-left: 10px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: #ffffff;
-  stroke-width: 2;
-  transform: translateX(-5px);
-  transition: all 0.3s ease;
-}
-html body main #contato .buttonCont .buttonContato:hover:before {
-  width: 100%;
-  background: #579af2;
-}
-html body main #contato .buttonCont .buttonContato:hover svg {
-  transform: translateX(0);
-}
-html body main #contato .buttonCont .buttonContato:active {
-  transform: scale(0.95);
+@media only screen and (max-width: 769px) {
+  html body main #servicos {
+    display: none;
+  }
+  html body main #servicos-responsive {
+    width: 100%;
+    height: 140dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  html body main #servicos-responsive .servicos-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30%;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: end;
+    align-items: flex-start !important;
+    flex-direction: column;
+    margin-block: 10%;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont h4 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 1%;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont h4 span {
+    color: #579af2;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont h3 {
+    width: 560px;
+    font-size: 2.7em;
+    margin-bottom: 2%;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont p {
+    color: rgba(255, 255, 255, 0.6);
+    width: 550px;
+    font-size: 1em;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .titleItens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start !important;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .titleItens h4 {
+    margin: 0px !important;
+    width: 400px;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .titleItens img {
+    width: 30px;
+    height: auto;
+    margin-right: 5%;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .mobile img {
+    width: auto;
+    height: 30px;
+    margin: 0% 6% 0% 1.5%;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont hr {
+    width: 90%;
+    height: 0.5px;
+    background: white;
+    opacity: 0.15;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens {
+    display: flex;
+    position: static;
+    height: 700px;
+    width: 640px;
+    background-size: 640px;
+    background-repeat: no-repeat;
+    background-image: url("../img/background_servicos.png");
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .servicoTitles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .servicoTitles h4 {
+    font-weight: bold;
+    font-size: 1, 2em;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .servicoTitles p {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2%;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .servicoTitles img {
+    width: 20px;
+    height: auto;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .manutencao {
+    left: 100px;
+    top: -65px;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .seo {
+    left: 160px;
+    top: 40px;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .icons {
+    position: relative;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .icons img {
+    width: 60px;
+    height: auto;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .manutencaoIcon {
+    left: 111px;
+    top: 173px;
+  }
+  html body main #servicos-responsive .servicos-container .servicoCont .servicoItens .marketingIcon {
+    left: -83px;
+    top: 463px;
+  }
+  html body main #servicos-responsive .servicos-container .servico-cards {
+    width: 80%;
+    height: 50%;
+  }
+  html body main #servicos-responsive .servicos-container .servico-cards .servicoTwoItens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    margin-bottom: 3%;
+    padding: 3% 7% 3% 7%;
+  }
+  html body main #servicos-responsive .servicos-container .servico-cards .servicoTwoItens .imgIcon {
+    background: #579af2;
+    padding: 3.5%;
+    border-radius: 50%;
+    margin-right: 5%;
+  }
+  html body main #servicos-responsive .servicos-container .servico-cards .servicoTwoItens .imgIcon img {
+    width: 60px;
+    height: auto;
+  }
+  html body main #servicos-responsive .servicos-container .servico-cards .servicoTwoItens h4 {
+    font-weight: bold;
+  }
+  html body main #servicos-responsive .servicos-container .servico-cards .servicoTwoItens p {
+    width: 400px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+  }
 }
 html body main #portifolio {
-  height: auto;
+  height: 100dvh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1228,8 +1306,8 @@ html body main #portifolio .site {
 }
 html body main #portifolio .port-card {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   width: 100%;
   height: auto;
@@ -1256,7 +1334,7 @@ html body main #portifolio .card-port {
   display: flex;
   margin-top: 1.5%;
   width: 80%;
-  height: 400px;
+  height: 60%;
   border-radius: 10%;
   z-index: 2222;
   justify-content: center;
@@ -1437,34 +1515,26 @@ html body main #portifolio .card-senacria h3 {
   margin: 0px;
 }
 html body main .card-solarprog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30%;
   height: 600px;
   border-radius: 20px;
-  display: flex;
-  background-image: url(../img/senacria.png);
+  background-image: url("../img/senacria.png");
   background-size: cover;
   flex-direction: column;
-  /* Alinha os elementos na vertical */
-  align-items: center;
-  justify-content: center;
-  /* Faz a imagem ocupar toda a largura */
-  /* Garante que a imagem vá até o topo */
   background-color: #f0f0f0;
-  /* Apenas para referência visual */
   overflow: hidden;
-  /* Evita qualquer transbordamento */
   cursor: pointer;
   transition: background-position 3s ease-in-out;
 }
 html body main .card-solarprog img {
   width: 100%;
   height: 100%;
-  /* Agora a imagem ocupa toda a altura do card */
   -o-object-fit: cover;
      object-fit: cover;
-  /* Garante que a imagem cubra todo o espaço */
   border-radius: 20px 20px 0 0;
-  /* Arredondamento apenas no topo */
 }
 html body main .card-solarprog .button {
   width: 50px;
@@ -1530,6 +1600,259 @@ html body main .card-senacria:hover {
 }
 html body main .card-solarprog:hover {
   background-position: 0% 100%;
+}
+html body main #solucoes {
+  width: 100%;
+  height: 40dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+html body main #solucoes .solucoesCont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start !important;
+  background: rgba(46, 46, 46, 0.6);
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.7);
+  padding: 4%;
+  border-radius: 25px;
+}
+html body main #solucoes .solucoesCont div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start !important;
+  flex-direction: column;
+}
+html body main #solucoes .solucoesCont div h2 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+html body main #solucoes .solucoesCont div p {
+  color: rgba(255, 255, 255, 0.6);
+  width: 700px;
+}
+html body main #solucoes .solucoesCont div {
+  margin-left: 6%;
+  /* From Uiverse.io by alexmaracinaru */
+}
+html body main #solucoes .solucoesCont div .cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 50px;
+}
+html body main #solucoes .solucoesCont div .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #579af2;
+  width: 55px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+html body main #solucoes .solucoesCont div .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+html body main #solucoes .solucoesCont div .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #ffffff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+html body main #solucoes .solucoesCont div .cta:hover:before {
+  width: 100%;
+  background: #579af2;
+}
+html body main #solucoes .solucoesCont div .cta:hover svg {
+  transform: translateX(0);
+}
+html body main #solucoes .solucoesCont div .cta:active {
+  transform: scale(0.95);
+}
+@media only screen and (max-width: 1025px) {
+  html body main #solucoes .solucoesCont {
+    flex-direction: column;
+    width: 90%;
+    margin-right: -5%;
+  }
+}
+@media only screen and (max-width: 769px) {
+  html body main #solucoes .solucoesCont {
+    flex-direction: column;
+    width: 90%;
+    margin-right: -9%;
+  }
+  html body main #solucoes .solucoesCont div {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  html body main #solucoes .solucoesCont div h3 {
+    font-size: 2em;
+  }
+  html body main #solucoes .solucoesCont div p {
+    width: 80%;
+  }
+}
+html body main #contato {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body main #contato h2 {
+  font-size: 6em;
+  text-align: center;
+}
+html body main #contato h2 span {
+  color: #579af2;
+}
+html body main #contato h3 {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+html body main #contato p {
+  color: #579af2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main #contato .pergunta {
+  width: 50%;
+  background: transparent;
+  margin-top: 1%;
+  /* Deixa o fundo do acordeão transparente */
+  /* Muda a cor do texto ao passar o mouse */
+  /* Linha azul separando cada pergunta */
+  /* Estiliza o corpo do acordeão */
+  /* Remove a borda padrão do botão */
+  /* Deixa a seta branca */
+}
+html body main #contato .pergunta .accordion-button {
+  background-color: transparent !important;
+  border: none;
+  color: #fff;
+  /* Mantém o texto visível */
+  font-size: 0.2em;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+html body main #contato .pergunta .accordion-collapse {
+  transition: height 0.5s;
+}
+html body main #contato .pergunta .accordion-button:hover {
+  color: #579af2;
+}
+html body main #contato .pergunta .accordion-item {
+  border: none;
+  background-color: transparent;
+  margin-block: 2%;
+  border-radius: 12px;
+  background-color: rgba(107, 107, 107, 0.123) !important;
+  border: none !important;
+}
+html body main #contato .pergunta .accordion-item:hover {
+  border: none !important;
+}
+html body main #contato .pergunta .accordion-item:active {
+  border: none !important;
+}
+html body main #contato .pergunta .accordion-body {
+  border: none !important;
+  /* Fundo semi-transparente */
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+}
+html body main #contato .pergunta .accordion-button:focus {
+  box-shadow: none;
+}
+html body main #contato .pergunta .accordion-button::after {
+  background-image: url(../img/plus_icon.png);
+  /* Inverte a cor padrão da seta (de preto para branco) */
+}
+html body main #contato .buttonCont {
+  /* From Uiverse.io by alexmaracinaru */
+}
+html body main #contato .buttonCont .buttonContato {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main #contato .buttonCont .buttonContato:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #579af2;
+  width: 55px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+html body main #contato .buttonCont .buttonContato span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+html body main #contato .buttonCont .buttonContato svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #ffffff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+html body main #contato .buttonCont .buttonContato:hover:before {
+  width: 100%;
+  background: #579af2;
+}
+html body main #contato .buttonCont .buttonContato:hover svg {
+  transform: translateX(0);
+}
+html body main #contato .buttonCont .buttonContato:active {
+  transform: scale(0.95);
 }
 html body footer {
   margin-top: 100px;

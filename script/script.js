@@ -77,7 +77,7 @@ gsap.fromTo(
   ".carousel",
   { x: "-24.5%" },
   {
-    x: "26%",
+    x: "34%",
     ease: "none",
 
     scrollTrigger: {
@@ -95,7 +95,7 @@ gsap.fromTo(
   ".carouselTec",
   { x: "10%" },
   {
-    x: "-41%",
+    x: "-60%",
     ease: "none",
     scrollTrigger: {
       // markers: true,
@@ -147,7 +147,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(
   ".servicosContainer",
-  { x: "50%" },
+  { x: "80%" },
   {
     x: "-83%",
     ease: "none",
